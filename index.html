@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
     <style>
       * {
         margin: 0;
@@ -43,7 +42,7 @@
       .menu-bg {
         background-color: aliceblue;
         height: 100vh;
-        background: linear-gradient(to top right, red, blue);
+        background: linear-gradient(to top right, red, royalblue);
         top: 0;
         border-radius: 50%;
         left: 0;
@@ -100,7 +99,7 @@
         padding: 4px 8px;
         background: -moz-linear-gradient(red, blue);
         background-clip: text;
-        border: 4px dotted rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
 
         height: 36px;
       }
@@ -158,6 +157,47 @@
       .intro h1 {
         font-size: 40px;
       }
+      .social {
+        position: absolute;
+        bottom: 56px;
+        height: 48px;
+        width: 192px;
+        right: 360px;
+        display: flex;
+        background-color: royalblue;
+        border-radius: 12px;
+      }
+      .social .social-icons {
+        height: 40px;
+        cursor: pointer;
+        width: 40px;
+        margin: 4px;
+      }
+      #ham {
+        display: none;
+      }
+      #social_1 {
+        background: url(./img/kisspng-social-media-instagram-login-facebook-advertising-instagram-5abe0f53c73d33.8992399915224052038161.png);
+        background-position: center;
+        background-size: cover;
+      }
+      #social_2 {
+        background: url(./img/reddit.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      #social_4 {
+        background: url(./img/github.png);
+        background-position: center;
+        background-size: cover;
+      }
+      #social_5 {
+        background: url(./img/telegram_PNG19.png);
+        background-position: center;
+        background-size: cover;
+      }
+
       @media screen and (max-width: 480px) {
         .fullpage img {
           display: none;
@@ -202,11 +242,19 @@
         <li class="menu" id="menu-5"><a href="CONTACT">KNOW MORE</a></li>
       </ul>
       <div class="search-area flex">
-        <input type="text" />
-        <div class="search-btn"></div>
+        <input id="inpu" type="text" />
+        <div id="ham" class="search-btn" onclick="showe()"></div>
+        <div id="mainn" class="search-btn" onclick="hidee()"></div>
       </div>
     </div>
     <div class="fullpage">
+      <div class="social">
+        <li id="social_1" class="social-icons"></li>
+        <li id="social_2" class="social-icons"></li>
+
+        <li id="social_4" class="social-icons"></li>
+        <li id="social_5" class="social-icons"></li>
+      </div>
       <div class="intro">
         <h1><span id="typed">ANURAG WELCOMES YOU</span></h1>
       </div>
@@ -251,6 +299,21 @@
         typeSpeed: 15,
         loop: true,
       });
+      var bakra = document.querySelector("#mainn");
+      var weapon = document.querySelector("#ham");
+      var target = document.querySelector("#inpu");
+
+      function showe() {
+        weapon.style.display = "none";
+        target.style.display = "block";
+        bakra.style.display = "block";
+      }
+      function hidee() {
+        weapon.style.display = "block";
+        bakra.style.display = "none";
+        target.style.display = "none";
+      }
+    
     </script>
   </body>
 </html>
