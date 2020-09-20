@@ -45,7 +45,11 @@ function pop() {
     project.style.transform = "translate(-50%, -50%) scale(1)";
     po.style.display = "none";
     pc.style.display = "block";
-    alert("all projects done are not responsive so you are adviced to open them on your desktop for full responsiveness.")
+    var alerted = localStorage.getItem('alerted') || ' ';
+    if (alerted != "yes") {
+        alert("all projects done are not responsive so you are adviced to open them on your desktop for full responsiveness.")
+        localStorage.setItem('alerted', 'yes');
+    }
 }
 function pcp() {
     project.style.transform = "scale(0)";

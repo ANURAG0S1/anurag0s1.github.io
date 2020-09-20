@@ -29,14 +29,15 @@ button {
 }
 
 ::-webkit-scrollbar {
-  background: rgb(220, 32, 73);
+  background: white;
   width: 9px;
+  border-radius: 10px;
   height: 10px;
   margin-top: 10px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: royalblue;
+  background: rgb(13, 13, 199);
 }
 .flex {
   display: flex;
@@ -45,7 +46,11 @@ button {
 .menu-bg {
   background-color: aliceblue;
   height: 100vh;
-  background: linear-gradient(to top right, red, royalblue);
+  background: linear-gradient(
+    to top right,
+    rgb(238, 31, 238),
+    rgb(23, 26, 209)
+  );
   top: 0;
   border-radius: 50%;
   left: 0;
@@ -122,11 +127,16 @@ button {
   width: 100vw;
 
   background: url(./img/uokpl.rs-png-images-for-website-5769526.png),
-    linear-gradient(to right bottom, blue, red);
+    linear-gradient(to right bottom, rgb(13, 13, 199), rgb(209, 41, 231));
   background-position: center bottom;
   background-size: contain;
   opacity: 0.8;
   background-repeat: no-repeat;
+}
+.fullpage video {
+  height: 100vh;
+  z-index: 1;
+  width: 100vw;
 }
 .fullpage img {
   position: absolute;
@@ -197,7 +207,7 @@ label span {
   cursor: pointer;
   z-index: 500;
   right: 80px;
-  font-weight: bold;
+  font-size: 22px;
 }
 
 #social_1:hover {
@@ -235,7 +245,11 @@ label span {
   top: 50%;
   left: 50%;
   position: absolute;
-  background: rgba(0, 72, 126, 0.878);
+  background: linear-gradient(
+    to right bottom,
+    rgb(13, 13, 199),
+    rgb(209, 41, 231)
+  );
   z-index: 10;
   padding: 10px;
   flex-direction: column;
@@ -259,8 +273,13 @@ label span {
   display: flex;
   height: auto;
   overflow-x: hidden;
-  border-radius: 23px;
-  background-color: rgb(60, 92, 133);
+  font-size: 27px;
+  border-radius: 33px;
+  background: linear-gradient(
+    to right bottom,
+    rgb(13, 13, 199),
+    rgb(209, 41, 231)
+  );
   overflow-y: scroll;
   flex-direction: column;
 }
@@ -295,7 +314,7 @@ label span {
   position: absolute;
   bottom: 1%;
   left: 2%;
-  font-size: larger;
+  font-size: 22px;
   cursor: pointer;
 }
 .cls {
