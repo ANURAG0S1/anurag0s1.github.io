@@ -34,6 +34,7 @@ function socialo() {
     social.style.transform = "scale(1)";
     so.style.display = "none";
     sc.style.display = "block";
+    sc.style.Zindex = "10000"
 }
 function socialc() {
     social.style.transform = "scale(0)";
@@ -44,6 +45,7 @@ function pop() {
     project.style.transform = "translate(-50%, -50%) scale(1)";
     po.style.display = "none";
     pc.style.display = "block";
+    alert("all projects done are not responsive so you are adviced to open them on your desktop for full responsiveness.")
 }
 function pcp() {
     project.style.transform = "scale(0)";

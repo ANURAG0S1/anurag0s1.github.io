@@ -14,31 +14,31 @@
       <div class="prjs">
         <div class="projects">
           <span>1</span>
-          <a href="./bg-anime/index.html">background animation</a>
+          <a href="./DISENO/index.html">DISENO</a>
         </div>
         <div class="projects">
           <span>2</span>
-          <a href="./parallax/index.html"> the eye animation</a>
+          <a href="./PHOTOLAKE/index.html">Photolake</a>
         </div>
         <div class="projects">
           <span>3</span>
-          <a href="./blur-photo/index.html"> photo blur on hover</a>
+          <a href="./portfolio/index.html"> Portfolio </a>
         </div>
         <div class="projects">
           <span>4</span>
-          <a href="./card-flipp/index.html"> card flipp on hover</a>
+          <a href="./parallax/index.html"> The eye</a>
         </div>
         <div class="projects">
           <span>5</span>
-          <a href="./parallax/index.html">
-            Portfolio (dark theme ,accent - blue)</a
-          >
+          <a href="./Ghome/index.html"> Google Home</a>
         </div>
         <div class="projects">
           <span>6</span>
-          <a href="./parallax/index.html">
-            Portfolio (dark theme ,accent - blue)</a
-          >
+          <a href="./randomcolor/index.html"> random-color generator</a>
+        </div>
+        <div class="projects">
+          <span>5</span>
+          <a href="./magic-notes/index.html"> Magic notes</a>
         </div>
       </div>
     </div>
@@ -46,7 +46,9 @@
 
     <div class="prj" onclick="pcp()" id="p-2">PROJECTS</div>
     <div class="prj" onclick="pop()" id="p-1">PROJECTS</div>
-    <div class="soci" onclick="socialc()" id="soc-2">SOCIAL</div>
+    <div class="soci" style="display: none" onclick="socialc()" id="soc-2">
+      SOCIAL
+    </div>
     <div class="soci" onclick="socialo()" id="soc-1">SOCIAL</div>
     <div id="navbar">
       <label for="logo"
@@ -56,9 +58,17 @@
         >
         <span
           id="span2"
-          style="display: none; z-index: 100; color: black"
+          style="
+            display: none;
+            z-index: 100;
+            width: 100px;
+            text-align: right;
+            top: 0;
+            color: rgb(204, 204, 204);
+            transform: rotateZ(45deg) translateY(-20px);
+          "
           onclick="closealert()"
-          >X</span
+          >+</span
         ></label
       >
       <ul class="flex" id="menu">
@@ -66,16 +76,13 @@
           <a href="./index.html" target="blank">Home</a>
         </li>
         <li class="menu" id="menu-2">
-          <a href="./projects.html" target="blank">PROJECTS</a>
+          <a onclick="pop()" target="blank">PROJECTS</a>
         </li>
         <li class="menu" id="menu-3">
-          <a href="./social.html">CONNECT TO US</a>
+          <a onclick="socialo()">CONNECT TO US</a>
         </li>
         <li class="menu" id="menu-4">
           <a href="./about.html" target="blank">ABOUT</a>
-        </li>
-        <li class="menu" id="menu-5">
-          <a href="CONTACT" target="blank">KNOW MORE</a>
         </li>
       </ul>
       <div class="search-area flex">
@@ -86,6 +93,7 @@
     </div>
     <div class="fullpage">
       <div id="social">
+        <div class="clos"></div>
         <li id="social_1" class="social-icons">
           <a href="https://www.instagram.com/code__51/" target="blank"
             >INSTAGRAM</a

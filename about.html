@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ABOUT</title>
+  </head>
+  <body>
+    <div id="navbar" style="position: static">
+      <label for="logo">
+        <a href="./index.html">ANURAG</a></label>
+        <span id="span1" onclick="openalert()" style="cursor: pointer"
+          >...</span
+        >
+        <span
+          id="span2"
+          style="display: none; z-index: 100; color: black;"
+          onclick="closealert()"
+          >+</span
+        ></label
+      >
+      <ul class="flex" id="menu">
+        <li class="menu" id="menu-1">
+          <a href="./index.html" target="blank">Home</a>
+        </li>
+        <li class="menu" id="menu-2">
+          <a onclick="pop()" target="blank">PROJECTS</a>
+        </li>
+        <li class="menu" id="menu-3">
+          <a onclick="socialo()">CONNECT TO US</a>
+        </li>
+        <li class="menu" id="menu-4">
+          <a href="#" target="blank">ABOUT</a>
+        </li>
+         
+      </ul>
+      <div class="search-area flex">
+        <input id="inpu" type="text" />
+        <div id="ham" class="search-btn" onclick="showe()"></div>
+        <div id="mainn" class="search-btn" onclick="hidee()"></div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="profile-photo"></div>
+      <div class="description">
+        <h1>ANURAG kushawaha</h1>
+        <h3 style="margin:10px 0px">Web devloper</h3>
+        <p>
+          still a learner ,and will be a learner forever, he have been coding
+          for web around  3-months and still learning as mentioned earlier.
+        </p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
