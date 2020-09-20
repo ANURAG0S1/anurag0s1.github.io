@@ -1,4 +1,3 @@
-alert("this website do work in desktops only")
 var pupil = document.querySelector("#pupil");
 var pupil2 = document.querySelector("#pupil-2");
 var spupil = document.querySelector("#spupil");
