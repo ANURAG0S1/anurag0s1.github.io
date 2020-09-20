@@ -9,7 +9,6 @@
 }
 body {
   background: darkslategrey;
-
   color: white;
 }
 
@@ -27,6 +26,17 @@ button {
   height: 34px;
   border: 0;
   border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  background: rgb(220, 32, 73);
+  width: 9px;
+  height: 10px;
+  margin-top: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: royalblue;
 }
 .flex {
   display: flex;
@@ -61,9 +71,8 @@ button {
 #navbar label {
   font-size: 32px;
   margin: 0px 30px;
-  /* cursor: none; */
 }
-.lable span:nth-child(2) {
+.label span:nth-child(2) {
   display: none;
 }
 #navbar ul {
@@ -124,8 +133,8 @@ button {
   bottom: 50px;
   height: 300px;
   width: 300px;
-  opacity:0.1;
   filter: invert(1);
+  opacity: 0.1;
   z-index: -2;
   right: 50px;
 }
@@ -162,6 +171,7 @@ label span {
   align-items: center;
   padding: 20px;
   right: 50px;
+  font-size: larger;
   transition-duration: 400ms;
   transform: scale(0);
   display: flex;
@@ -169,6 +179,7 @@ label span {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+  z-index: 100;
 }
 #social .social-icons {
   height: 60px;
@@ -184,6 +195,7 @@ label span {
   position: absolute;
   bottom: 1%;
   cursor: pointer;
+  z-index: 500;
   right: 80px;
   font-weight: bold;
 }
@@ -243,4 +255,78 @@ label span {
     background-color: royalblue;
     border-radius: 12px;
   }
+}
+#project {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background: rgb(220, 32, 73);
+  z-index: 10;
+  padding: 16px;
+  flex-direction: column;
+  height: 50vh;
+  border-radius: 23px;
+  width: 40vw;
+  box-shadow: 0px 0px 100px -10px;
+  transform: translate(-50%, -50%) scale(0);
+  transition-duration: 300ms;
+}
+
+#title-p {
+  display: block;
+  font-size: larger;
+  padding: 20px;
+  transition-duration: 400ms;
+}
+.prjs {
+  padding: 20px 10px;
+  display: flex;
+  height: 40vh;
+  overflow-x: hidden;
+  border-radius: 23px;
+  background-color: rgba(60, 92, 133, 0.719);
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.projects {
+  display: block;
+  min-height: 40px;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  color: royalblue;
+  font-size: larger;
+  line-height: 40px;
+  transition-duration: 400ms;
+}
+.projects span {
+  font-size: 30px;
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 7px;
+}
+.projects a {
+  font-size: 16px;
+  color: rgb(0, 30, 150);
+}
+.prj {
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+  font-size: larger;
+  cursor: pointer;
+}
+.cls {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  font-size: 50px;
+  font-weight: bolder;
+  transform: rotateZ(45deg);
 }

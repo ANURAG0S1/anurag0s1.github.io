@@ -1,0 +1,82 @@
+*{
+    
+}
+body{
+    background-color: rgb(74, 75, 75);
+    color: rgb(255, 255, 255);
+}
+.logo{
+    
+    width: 45%;
+    margin: auto auto;
+    font-size: 4vw;
+    margin-top: 100px;
+ text-align: center;
+}
+.search{
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 45%;
+    border :1px solid black;
+    height: 50px;
+    border-radius: 29px ;
+}
+.search-icon{
+    left: 15px;
+    bottom: 9px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: aqua;
+}
+.asst-icon{
+    right: 19px;
+    bottom: 9px;
+    position: absolute;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 30px;
+    background-color: aqua;
+}
+.websites{
+    width: 42%;
+ /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+  margin: auto auto;
+  margin-top: 40px;
+}
+.website{
+    width: 46%;
+    margin: 5px;
+    padding: 11px;
+    display: block;
+    width: 38px;
+    background-color: blue;
+    height: 38px;
+ font-size: 30px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.web{
+    margin-top: 10px;
+ text-align: center;
+ font-size: 14px;
+ font-weight: bold;
+}
+.blue{
+    color: rgb(66,133,244);
+}
+.red{
+    color: rgb(219,68,55);
+}
+.green{
+    color: rgb(15, 157, 88);
+}
+.yellow{
+    color: rgb(244, 160, 0);
+}

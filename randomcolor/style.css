@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full {
+  height: 100px;
+  background-color: rgb(60, 202, 31);
+  width: 100px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+}

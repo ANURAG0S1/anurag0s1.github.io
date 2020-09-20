@@ -5,6 +5,31 @@ var bg = document.querySelector("#bg-menu");
 var social = document.querySelector('#social');
 var so = document.querySelector("#soc-1")
 var sc = document.querySelector("#soc-2")
+var po = document.querySelector("#p-1")
+var pc = document.querySelector("#p-2")
+var project = document.querySelector("#project")
+var bakra = document.querySelector("#mainn");
+var weapon = document.querySelector("#ham");
+var target = document.querySelector("#inpu");
+var typed = new Typed("#typed", {
+    strings: ["",
+        "Hello, Bonjour, नमस्ते !",
+        "I am Anurag kush ",
+        "I am a Passionate Coder!",
+        "I am a photographer!",
+        "I am an enthusiastic Techie!",
+        "Welcome To My page!",
+        "Checkout My Blog!",
+        "Checkout My Projects!",
+        "Thanks for visiting my page!",
+    ],
+    backSpeed: 25,
+    smartBackspace: true,
+    backDelay: 2500,
+    startDelay: 1000,
+    typeSpeed: 15,
+    loop: true,
+});
 function socialo() {
     social.style.transform = "scale(1)";
     so.style.display = "none";
@@ -14,6 +39,16 @@ function socialc() {
     social.style.transform = "scale(0)";
     so.style.display = "block";
     sc.style.display = "none";
+}
+function pop() {
+    project.style.transform = "translate(-50%, -50%) scale(1)";
+    po.style.display = "none";
+    pc.style.display = "block";
+}
+function pcp() {
+    project.style.transform = "scale(0)";
+    po.style.display = "block";
+    pc.style.display = "none";
 }
 function openalert() {
     taret.style.overflow = "visible";
@@ -28,28 +63,7 @@ function closealert() {
     bg.style.transform = " translate(-50%, -40%) scale(0)";
 }
 
-var typed = new Typed("#typed", {
-    strings: [
-        "Hello, Bonjour, नमस्ते !",
-        "I am Anurag kush ",
-        "I am a Passionate Coder!",
-        "I am a photographer!",
-        "I am an enthusiastic Techie!",
-        "Welcome To My page!",
-        "Checkout My Blog!",
-        "Checkout My Projects!",
-        "Thanks for visiting my page!",
-    ],
-    backSpeed: 25,
-    smartBackspace: true,
-    backDelay: 1500,
-    startDelay: 1000,
-    typeSpeed: 15,
-    loop: true,
-});
-var bakra = document.querySelector("#mainn");
-var weapon = document.querySelector("#ham");
-var target = document.querySelector("#inpu");
+
 
 function showe() {
     weapon.style.display = "none";
