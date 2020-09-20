@@ -1,3 +1,4 @@
+alert("this website do work on desktop only");
 var bakra = document.querySelector("#mainn");
 var weapon = document.querySelector('#ham');
 var target = document.querySelector('#inpu');
