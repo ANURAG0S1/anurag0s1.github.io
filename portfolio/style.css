@@ -14,7 +14,7 @@
   width: 100vw;
   height: 100vh;
   flex-wrap: wrap;
-
+overflow:hidden;
   background: linear-gradient(
     to bottom,
     rgb(170, 170, 170),
