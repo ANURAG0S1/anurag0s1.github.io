@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: consolas, sans-serif;
+}
+body {
+  background: darkslategrey;
+
+  color: white;
+}
+
+input,
+button,
+a {
+  font-size: 18px;
+  color: white;
+  border-radius: 12px;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  height: 34px;
+  border: 0;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.menu-bg {
+  background-color: aliceblue;
+  height: 100vh;
+  background: linear-gradient(to top right, red, royalblue);
+  top: 0;
+  border-radius: 50%;
+  left: 0;
+  z-index: 2;
+  transform: scale(0) translate(-50%, -40%);
+  position: absolute;
+  transition-duration: 500ms;
+  width: 500px;
+}
+#navbar {
+  overflow: hidden;
+  height: 45px;
+  position: absolute;
+  z-index: 40;
+  line-height: 45px;
+  transition-delay: 400ms;
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+
+  flex-direction: column;
+}
+#navbar label {
+  font-size: 32px;
+  margin: 0px 30px;
+  /* cursor: none; */
+}
+.lable span:nth-child(2) {
+  display: none;
+}
+#navbar ul {
+  display: block;
+  margin-left: 20px;
+}
+#navbar ul li a {
+  height: 32px;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 14px;
+
+  margin: 10px 2px;
+  margin-top: 10px;
+}
+#navbar ul li a:hover {
+  background-color: rgba(204, 221, 221, 0.172);
+  text-decoration: underline;
+}
+.search-area {
+  position: absolute;
+  right: 40px;
+  padding-top: 8px;
+}
+.search-area input {
+  padding: 4px 8px;
+  background: -moz-linear-gradient(red, blue);
+  background-clip: text;
+  border: 1px solid rgb(255, 255, 255);
+
+  height: 36px;
+}
+.search-btn {
+  cursor: pointer;
+  background: url(./img/icons8-search-50.png);
+  filter: invert(1);
+  margin-left: 10px;
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+.fullpage {
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
+  width: 100vw;
+
+  background: url(./img/uokpl.rs-png-images-for-website-5769526.png),
+    linear-gradient(to right bottom, blue, red);
+  background-position: center bottom;
+  background-size: contain;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+}
+.fullpage img {
+  position: absolute;
+  bottom: 50px;
+  height: 300px;
+  width: 300px;
+  filter: invert(1);
+  z-index: -2;
+  right: 50px;
+}
+.an {
+  top: 30%;
+  position: absolute;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+label span {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.intro {
+  position: absolute;
+  width: 80vw;
+  left: 50%;
+
+  top: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.intro h1 {
+  font-size: 40px;
+}
+#social {
+  position: absolute;
+  bottom: 56px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  background: url(./img/social.png);
+  align-items: center;
+  padding: 20px;
+  right: 50px;
+  transition-duration: 400ms;
+  transform: scale(0);
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+#social .social-icons {
+  height: 60px;
+  cursor: pointer;
+  width: 184px;
+  margin: 4px;
+  padding-top: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition-duration: 300ms;
+}
+.soci {
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  right: 80px;
+  font-weight: bold;
+}
+
+#social_1:hover {
+  background: url(./img//1.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#social_2:hover {
+  background: url(./img//2.png);
+  background-position: center;
+  background-size: contain;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+}
+#social_3:hover {
+  background: url(./img//3.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(1);
+  background-repeat: no-repeat;
+}
+#social_4:hover {
+  background: url(./img//4.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#ham {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .fullpage img {
+    display: none;
+  }
+  .search-area input {
+    display: none;
+  }
+  .search-area .search-btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  #navbar label {
+    font-size: 16px;
+  }
+  #social {
+    position: absolute;
+    bottom: 10px;
+    height: 48px;
+    width: 192px;
+    right: 10px;
+    display: flex;
+    background-color: royalblue;
+    border-radius: 12px;
+  }
+}

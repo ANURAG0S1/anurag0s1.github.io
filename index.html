@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ANURAG</title>
+  </head>
+  <body>
+    <div class="menu-bg" id="bg-menu"></div>
+
+    <div class="soci" onclick="socialc()" id="soc-2">SOCIAL</div>
+    <div class="soci" onclick="socialo()" id="soc-1">SOCIAL</div>
+    <div id="navbar">
+      <label for="logo"
+        >ANURAG
+        <span id="span1" onclick="openalert()" style="cursor: pointer"
+          >...</span
+        >
+        <span
+          id="span2"
+          style="display: none; z-index: 100; color: black"
+          onclick="closealert()"
+          >X</span
+        ></label
+      >
+      <ul class="flex" id="menu">
+        <li class="menu" id="menu-1"><a href="./index.html">Home</a></li>
+        <li class="menu" id="menu-2"><a href="./projects.html">PROJECTS</a></li>
+        <li class="menu" id="menu-3">
+          <a href="./social.html">CONNECT TO US</a>
+        </li>
+        <li class="menu" id="menu-4"><a href="./about.html">ABOUT</a></li>
+        <li class="menu" id="menu-5"><a href="CONTACT">KNOW MORE</a></li>
+      </ul>
+      <div class="search-area flex">
+        <input id="inpu" type="text" />
+        <div id="ham" class="search-btn" onclick="showe()"></div>
+        <div id="mainn" class="search-btn" onclick="hidee()"></div>
+      </div>
+    </div>
+    <div class="fullpage">
+      <div id="social">
+        <li id="social_1" class="social-icons">INSTAGRAM</li>
+        <li id="social_2" class="social-icons">REDDIT</li>
+
+        <li id="social_3" class="social-icons">GITHUB</li>
+        <li id="social_4" class="social-icons">TELEGRAM</li>
+      </div>
+      <div class="intro">
+        <h1><span id="typed">ANURAG WELCOMES YOU</span></h1>
+      </div>
+
+      <img src="./img/hiclipart.com.png" alt="" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
