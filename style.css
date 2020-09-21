@@ -152,7 +152,6 @@ button {
   top: 30%;
   position: absolute;
   left: 50%;
-
   transform: translate(-50%, -50%);
 }
 label span {
@@ -163,7 +162,6 @@ label span {
   position: absolute;
   width: 80vw;
   left: 50%;
-
   top: 50%;
   transform: translate(-50%, -80%);
 }
@@ -333,7 +331,6 @@ label span {
   height: 30vw;
   margin: auto;
   width: 30vw;
-  /* margin-top: 10vw; */
   margin-bottom: 10vh;
   background: url(./img/IMG_20200215_074655_321.jpg);
   background-size: cover;
