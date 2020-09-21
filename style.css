@@ -361,7 +361,7 @@ label span {
   #social {
     display: flex;
     position: absolute;
-    bottom: 10vw;
+    bottom: 15vh;
     height: 80vw;
     width: 80vw;
     background: url(./img/social.png);
