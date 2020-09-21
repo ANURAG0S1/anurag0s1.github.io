@@ -31,7 +31,7 @@ var typed = new Typed("#typed", {
     loop: true,
 });
 function socialo() {
-    social.style.transform = "scale(1)";
+    social.style.transform = "scale(0.8)";
     so.style.display = "none";
     sc.style.display = "block";
     sc.style.Zindex = "10000"

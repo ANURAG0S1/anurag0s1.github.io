@@ -361,11 +361,11 @@ label span {
   #social {
     display: flex;
     position: absolute;
-    bottom: 56px;
-    height: 300px;
-    width: 300px;
+    bottom: 10vw;
+    height: 80vw;
+    width: 80vw;
     background: url(./img/social.png);
-    right: 30px;
+    right: 10vw;
     font-size: larger;
     transition-duration: 400ms;
     transform: scale(0);
@@ -411,6 +411,7 @@ label span {
   }
   #project {
     width: 80vw;
-    height: 70vh;
+
+    min-height: 40vh;
   }
 }
