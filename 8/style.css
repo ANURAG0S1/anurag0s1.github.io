@@ -1,5 +1,5 @@
 * {
-    scroll-behavior: smoothb;
+    scroll-behavior: smooth;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,10 +38,11 @@ button {
 
 .nt {
     font-weight: 100;
+    margin-bottom: 10px;
 }
 
 .bd {
-    border-radius: 10px;
+    border-radius: 4px;
     border: 1px solid rgba(70, 69, 69, 0.062);
 }
 
@@ -101,6 +102,7 @@ button {
 
 .page {
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .text-1 {
@@ -122,7 +124,7 @@ button {
     color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 0px 10px;
-    background: rgb(28, 90, 224);
+    background: rgb(53, 150, 230);
 }
 
 .image {
@@ -200,13 +202,201 @@ button {
     margin: auto;
     width: 720px;
     margin-top: 50px;
-    margin-bottom: 110px;
+    margin-bottom: 150px;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    background: rgba(73, 100, 250, 0.541);
+    border-radius: 50%;
 }
 
 .flex {
     height: 250px;
     width: 220px;
     margin: 10px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 20px 1px rgb(182, 182, 182);
+}
+
+.flex-text {
+    position: relative;
+    bottom: -50%;
+}
+
+.flex-text h5 {
+    color: gray;
+}
+
+#page-6 {
+    padding-top: 40px;
+}
+
+.text-6 {
+    height: 30vh;
+    width: 70vw;
+    margin: auto;
+}
+
+.text-6 button {
+    padding: 5px 12px;
+    background: rgb(53, 150, 230);
+    color: white;
+}
+
+.footer {
+    padding-top: 0px;
+    width: 50vw;
+    height: 40vh;
+    border-top: 1px solid rgba(201, 201, 201, 0.432);
+    margin: auto;
+}
+
+.footer .logo-icon {
+    margin-bottom: 30px;
+}
+
+.footer-menu li {
+    margin: 0px 20px;
+    font-size: 14px;
+    color: grey;
+}
+
+.endline li {
+    margin-top: 45px;
+    font-size: 10px;
+}
+
+#menu-0 {
+    pointer-events: none;
+}
+
+#menu-0 a {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        line-height: 30px;
+        /* overflow: hidden;s */
+        background: white;
+        z-index: 10;
+    }
+    #logo .logo-icon {
+        height: 30px;
+        width: 30px;
+    }
+    #menu {
+        top: 44px;
+        padding: 10px;
+        right: 10px;
+        flex-direction: column;
+        border-radius: 23px;
+        background: rgb(32, 119, 201);
+        display: none;
+    }
+    .menu {
+        font-size: 12px;
+    }
+    .menu a {
+        display: inline-block;
+        width: 100%;
+        color: white;
+        margin-left: 4px;
+        padding: 2px 5px;
+    }
+    #menu-0 a {
+        position: absolute;
+        background: rgb(32, 119, 201);
+        right: 17px;
+        border-radius: 12px;
+        width: 80px;
+        padding-left: 20px;
+    }
+    .text-1 {
+        width: 85vw;
+    }
+    .text-1 h4 {
+        margin-top: 0px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .image {
+        margin-top: 10vh;
+        width: 80vw;
+        height: 60vw;
+    }
+    .textbox h2 {
+        font-size: 20px;
+    }
+    #left {
+        padding: 15px;
+        height: 30vh;
+    }
+    #left p {
+        padding-top: 10px;
+    }
+    .dev-info {
+        margin-top: 20px;
+    }
+    #right {
+        height: 30vh;
+    }
+    #rightt {
+        height: 30vh;
+    }
+    #right .img {
+        margin-top: 0px;
+        height: 30vh;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .mobile {
+        height: 10vh;
+    }
+    .bgimg {
+        height: 25vh;
+        width: 100vw;
+        background-size: cover;
+    }
+    .mobimg {
+        background-size: cover;
+        height: 30vh;
+    }
+    #page-4 {
+        height: 34vh;
+    }
+    #page-5 {
+        margin-top: 5vh;
+    }
+    .PROJECTS {
+        width: 90vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .flex {
+        width: 25vw;
+        height: 30vh;
+    }
+    .flex-text h3 {
+        font-size: 10px;
+        position: relative;
+    }
+    .footer {
+        width: 90vw;
+    }
+    .footer-menu li {
+        font-size: 12px;
+        margin: 0px 7px;
+        width: fit-content;
+    }
+    .endline {
+        margin-top: 20px;
+    }
+    #menu-0 {
+        pointer-events: all;
+    }
 }
