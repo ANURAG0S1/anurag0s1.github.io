@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>musica</title>
+</head>
+
+<body>
+    <div class="fullscreen dfr">
+        <div class="dfc" id="first">
+            <div id="logo"></div>
+            <div id="menu">
+                <li class="menu-item active" id="menu-1">
+                    <a href="#page-2"></a>
+                </li>
+                <li class="menu-item" id="menu-2">
+                    <a href="#page-2"></a>
+                </li>
+                <li class="menu-item" id="menu-3">
+                    <a href="#page-2"></a>
+                </li>
+                <li class="menu-item" id="menu-4">
+                    <a href="#page-2"></a>
+                </li>
+                <li class="menu-item" id="menu-5">
+                    <a href="#page-2"></a>
+                </li>
+            </div>
+            <div id="bottom-logo"></div>
+        </div>
+        <div class="dfc" id="second">
+            <!-- <div class="page" id="page-2"></div>
+            <div class="page" id="page-3"></div>
+            <div class="page" id="page-4"></div>
+            <div class="page" id="page-5"></div> -->
+            <div class="" id="page-1">
+                <div id="top-menu">
+                    <div class="top-menu-item">
+                        <h4>Friends</h4>
+                    </div>
+                    <div class="top-menu-item">
+                        <h4>New Music</h4>
+                    </div>
+                    <div class="top-menu-item">
+                        <h4>Radio</h4>
+                    </div>
+                    <div class="top-menu-item">
+                        <h4>Playlist</h4>
+                    </div>
+                </div>
+                <div id="audio">
+                    <audio id="aud" src="./audio/2.mp3"></audio>
+                </div>
+                <div id="playing_now_album_art">
+                    <div class="dfr" id="song-playing">
+                        <div id="song-title" class="songName">shape_of_you</div>
+                        <div class="bsz bs playbutton" onclick="Play()"></div>
+                    </div>
+                </div>
+                <div class="songs-menu">
+                    <div id="left-songs" class="songs">
+                        <h2>Popular</h2>
+                        <div class="" id="song-list">
+                            <li class="song dfr" onclick="Playinit(1)">
+                                <div class="album-art ab"></div>
+                                <div class="song-title">
+                                    <div class="song-name">believer <br><span>Imagine dragons</span>
+                                    </div>
+                            </li>
+                            <li class="song dfr" onclick="Playinit(0)">
+                                <div class="album-art aa"></div>
+                                <div class="song-title">
+                                    <div class="song-name">shape of you <br><span>ed sheeran</span></div>
+                                </div>
+                            </li>
+                            <li class="song dfr" onclick="Playinit(2)">
+                                <div class="album-art ac"></div>
+                                <div class="song-title">
+                                    <div class="song-name">hope <br> <span>XXXtentacion</span></div>
+                                </div>
+                            </li>
+                            <li class="song dfr" onclick="Playinit(3)">
+                                <div class="album-art ad"></div>
+                                <div class="song-title">
+                                    <div class="song-name">Falling <br><span>XXXtentacion</span></div>
+                                </div>
+                            </li>
+                            </div>
+                        </div>
+                        <div id="right-songs" class="songs">
+                            <h2>Artists</h2>
+                            <div class="right-song" id="artist-list">
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name">ed sheeran</div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name">Imagine dragons</div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name"></div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name"></div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name"></div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name"></div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name"></div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                                <li class="song dfr">
+                                    <div class="album-art artist"></div>
+
+                                    <div class="song-title artist-name dfr">
+                                        <div class="name"></div>
+                                        <div class="ar">></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dfc" id="player">
+                        <div class="player-items dfr">
+                            <div class="player-left dfr">
+                                <div class="left-btn bs" id="btn-1"></div>
+                                <div class="left-btn bs" id="btn-2"></div>
+                                <div class="left-btn bs" id="btn-3"></div>
+                            </div>
+                            <div class="player-center dfr">
+                                <div class="player-main-btn bs" id="repeat"></div>
+                                <div class="player-main-btn bs" id="previous" onclick="previous()"></div>
+                                <div class="player-main-btn bs .playbutton" id="play" onclick="Playinit(0)"></div>
+                                <div class="player-main-btn bs" id="next" onclick="nex()"></div>
+                                <div class="player-main-btn bs" id="shuffle"></div>
+                            </div>
+                            <div class="player-right dfr">
+                                <div class="right-btn bs" id="volume"></div>
+                                <div class="" id="volume-range">
+                                    <input type="range" min="0" max="0.5" step="0.01" oninput="vol(this.value)" class="range" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-time dfr">
+                            <div class="time run-time">1:00</div>
+                            <input type="range" id="seekBar" min="0" step="1" />
+                            <div id="total_time" class="time total-time"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="third">
+                <div class="dfr search">
+                    <input type="text" placeholder="search for songs" />
+                    <div class="noti-button bs"></div>
+                </div>
+                <div id="search-tags">
+                    <h3>Search tags</h3>
+                    <span class="search-tags"> <span class="cross">justin</span></span>
+                    <span class="search-tags">one direction</span>
+                    <br />
+                    <span class="search-tags">albatross</span>
+                    <span class="search-tags">delicate</span>
+                    <span class="search-tags">believers</span><br />
+                </div>
+                <div id="podcast">
+                    <h2>New podcasts</h2>
+                    <div class="flexbox dfr">
+                        <div class="flex-item flex-item-1 aa"></div>
+                        <div class="flex-item flex-item-2 ab"></div>
+                        <div class="flex-item flex-item-3 ac"></div>
+                        <div class="flex-item flex-item-4 ad"></div>
+                        <div class="flex-item flex-item-5"></div>
+                        <div class="flex-item flex-item-6"></div>
+                        <div class="flex-item flex-item-7"></div>
+                        <div class="flex-item flex-item-8"></div>
+                    </div>
+                </div>
+                <div class="songinfo">
+                    <div class="song-info dfr">
+                        <div class="info-album-pic"></div>
+                        <div class="info-title dfr">
+                            <div class="title songName">song title</div>
+                            <div class="arrow">></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum fuga, omnis u excepturi aperiam.
+                    </div>
+                    <div class="share" onclick="">share this song</div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
