@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background: black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+input,
+button {
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.dfr {
+    display: flex;
+    flex-direction: row;
+}
+
+.dfc {
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#navbar {
+    height: 50px;
+    position: fixed;
+    width: 100vw;
+    background: rgb(22, 22, 22);
+    padding: 0px 30px;
+}
+
+#logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+}
+
+#logo span {
+    font-size: 55px;
+    color: white;
+    font-weight: 1000;
+}
+
+.menu {
+    align-items: center;
+    color: white;
+    margin-left: 40px;
+    font-size: 20px;
+    /* justify-content: space-between; */
+    width: 60%;
+}
+
+.menu-item a {
+    color: white;
+    margin: 0px 10px;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    margin-left: 10px;
+}
+
+#main-body {
+    width: 95vw;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.mainframe {
+    justify-content: center;
+    flex-flow: wrap;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.box {
+    height: 250px;
+    border-radius: 20px;
+    max-width: 200px;
+    width: 150px;
+    flex-grow: 1;
+    margin: 4px 10px;
+    background: linear-gradient(to right bottom, orangered, royalblue);
+}
+
+.box:nth-child(1) {
+    background: url(../assets/1.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(2) {
+    background: url(../assets/2.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(3) {
+    background: url(../assets/3.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(4) {
+    background: url(../assets/4.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(5) {
+    background: url(../assets/5.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(6) {
+    background: url(../assets/7.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(7) {
+    background: url(../assets/8.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(8) {
+    background: url(../assets/9.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(9) {
+    background: url(../assets/12.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(10) {
+    background: url(../assets/11.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(11) {
+    background: url(../assets/1.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(12) {
+    background: url(../assets/2.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(13) {
+    background: url(../assets/3.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(14) {
+    background: url(../assets/4.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(15) {
+    background: url(../assets/5.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(16) {
+    background: url(../assets/7.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(17) {
+    background: url(../assets/8.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(18) {
+    background: url(../assets/9.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(19) {
+    background: url(../assets/12.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.box:nth-child(20) {
+    background: url(../assets/11.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+    #menu {
+        flex-direction: column;
+    }
+    .search {
+        display: flex;
+        align-items: center;
+    }
+    .search button {
+        margin-left: 8px;
+    }
+}
