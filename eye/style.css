@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  cursor: crosshair;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: royalblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  overflow: hidden;
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.eye-1 {
+  margin-left: 100px;
+}
+
+.eye {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.pupile {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  display: flex;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.spupil {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  border-radius: 50%;
+  width: 30px;
+  background-color: rgb(222, 231, 231);
+}
