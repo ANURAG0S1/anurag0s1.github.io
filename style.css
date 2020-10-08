@@ -135,7 +135,6 @@
     padding: auto;
     object-fit: cover;
     width: auto;
-    height: 100vh;
     transform: scale(0.9);
     margin: auto;
     position: absolute;
@@ -284,9 +283,7 @@
         padding: auto;
         object-fit: cover;
         width: auto;
-        height: 100vh;
         margin: auto;
-        position: absolute;
         background-size: contain;
         z-index: -1;
     }
