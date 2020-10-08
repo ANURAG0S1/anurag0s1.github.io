@@ -25,3 +25,15 @@ function inp() {
   methood.style.display = "none";
   methoed.style.display = "block";
 }
+function pr() {
+  document.querySelector("#img").style.filter = "blur(14px)";
+  document.querySelector(".full-screen").style.filter = "blur(4px)";
+  document.querySelector("#menu-scr").style.transform = "scale(1)";
+  document.querySelector(".skil").setAttribute("onclick", "rp()");
+}
+function rp() {
+  document.querySelector("#img").style.filter = "blur(0px)";
+  document.querySelector(".full-screen").style.filter = "blur(0px)";
+  document.querySelector("#menu-scr").style.transform = "scale(0)";
+  document.querySelector(".skil").setAttribute("onclick", "pr()");
+}

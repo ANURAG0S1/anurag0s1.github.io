@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gradient</title>
+</head>
+
+<body>
+    <div id="frame" class="dfr">
+        <div id="show" class="left dfc">
+            <div id="title">
+                <h2>Gradient Generator</h2>
+            </div>
+            <div id="showbox"></div>
+            <div id="output"></div>
+        </div>
+
+        <div id="work" class="right dfc">
+            <div class="frame">
+                <div class="box" id="box1">
+                    <h2>Customize</h2>
+                    <div class="color">
+                        <h3>Color-1</h3>
+
+                        <h4>R value</h4>
+
+                        <input id="rone" oninput="show()" type="range" min="0" max="255" /><br />
+                        <h4>G value</h4>
+
+                        <input id="gone" oninput="show()" type="range" min="0" max="255" /><br />
+                        <h4>B value</h4>
+
+                        <input id="bone" oninput="show()" type="range" min="0" max="255" /><br />
+                    </div>
+                </div>
+                <div class="box" id="box1">
+                    <div class="color">
+                        <h3>Color-2</h3>
+
+                        <h4>R value</h4>
+
+                        <input id="rtwo" oninput="show()" type="range" min="0" max="255" /><br />
+                        <h4>G value</h4>
+
+                        <input id="gtwo" oninput="show()" type="range" min="0" max="255" /><br />
+                        <h4>B value</h4>
+
+                        <input id="btwo" oninput="show()" type="range" min="0" max="255" /><br />
+                    </div>
+                    <div class="angle color">
+                        <h4>Angle</h4>
+                        <input type="range" min="1" oninput="show()" step="1" max="360" id="angle" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

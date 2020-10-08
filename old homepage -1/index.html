@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ANURAG</title>
+</head>
+
+<body>
+    <div id="project">
+        <div class="cls" onclick="pcp()">+</div>
+        <div id="title-p">MY PROJECTS</div>
+        <div class="prjs" style="user-select: none">
+            <div class="projects">
+                <span>1</span>
+                <a href="./DISENO/index.html">DISENO</a>
+            </div>
+            <div class="projects">
+                <span>2</span>
+                <a href="./8/index.html"> corporate design</a>
+            </div>
+            <div class="projects">
+                <span>3</span>
+                <a href="./food ordering website/index.html">food ordering website</a>
+            </div>
+            <div class="projects">
+                <span>4</span>
+                <a href="./parallax/index.html"> The eye</a>
+            </div>
+            <div class="projects">
+                <span>5</span>
+                <a href="./Ghome/index.html"> Google Home</a>
+            </div>
+            <div class="projects">
+                <span>6</span>
+                <a href="./randomcolor/index.html"> random-color generator</a>
+            </div>
+            <div class="projects">
+                <span>7</span>
+                <a href="./PHOTOLAKE/index.html">Photolake</a>
+            </div>
+            <div class="projects">
+                <span>8</span>
+                <a href="./portfolio/index.html"> Portfolio </a>
+            </div>
+            <div class="projects">
+                <span>8</span>
+                <a href="./online music/index.html"> Music web app </a>
+            </div>
+            <div class="projects">
+                <span>9</span>
+                <a href="./Responsive gallery/index.html"> picOcean </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-bg" id="bg-menu"></div>
+
+    <div class="prj" onclick="pcp()" id="p-2">PROJECTS</div>
+    <div class="prj" onclick="pop()" id="p-1">PROJECTS</div>
+    <div class="soci" style="display: none" onclick="socialc()" id="soc-2">
+        SOCIAL
+    </div>
+    <div class="soci" onclick="socialo()" id="soc-1">SOCIAL</div>
+    <div id="navbar">
+        <label for="logo">ANURAG
+        <span
+          id="span1"
+          onclick="openalert()"
+          style="user-select: none; cursor: pointer"
+          >...</span
+        >
+        <span
+          id="span2"
+          style="
+            display: none;
+            z-index: 100;
+            width: 100px;
+            text-align: right;
+            top: 0;
+            user-select: none;
+            color: rgb(204, 204, 204);
+            transform: rotateZ(45deg) translateY(-20px);
+          "
+          onclick="closealert()"
+          >+</span
+        ></label
+      >
+      <ul class="flex" id="menu">
+        <li class="menu" id="menu-1">
+          <a href="./index.html" target="blank">Home</a>
+        </li>
+        <li class="menu" id="menu-2">
+          <a onclick="pop()" target="blank">PROJECTS</a>
+        </li>
+        <li class="menu" id="menu-3">
+          <a onclick="socialo()">CONNECT TO US</a>
+        </li>
+        <li class="menu" id="menu-4">
+          <a href="./about.html" target="blank">ABOUT</a>
+        </li>
+      </ul>
+      <div class="search-area flex">
+        <input id="inpu" type="text" />
+        <div id="ham" class="search-btn" onclick="showe()"></div>
+        <div id="mainn" class="search-btn" onclick="hidee()"></div>
+      </div>
+    </div>
+    <div class="fullpage">
+      <div id="social">
+        <div class="clos"></div>
+        <li id="social_1" class="social-icons">
+          <a href="https://www.instagram.com/code__51/" target="blank"
+            >INSTAGRAM</a
+          >
+        </li>
+        <li id="social_2" class="social-icons" target="blank">REDDIT</li>
+
+        <li id="social_3" class="social-icons">
+          <a href="https://github.com/ANURAG0S1/" target="blank">GITHUB</a>
+        </li>
+        <li id="social_4" class="social-icons">
+          <a href="https://t.me/codes51" target="blank">TELEGRAM</a>
+        </li>
+      </div>
+      <div class="intro">
+        <h1><span id="typed"> </span></h1>
+      </div>
+
+      <img src="./img/hiclipart.com.png" alt="" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

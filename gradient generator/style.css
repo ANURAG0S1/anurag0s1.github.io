@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    user-select: none;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+body,
+input,
+button {
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-slider-runnable-track {
+    height: 1px;
+}
+
+::-webkit-slider-thumb {
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+}
+
+.dfr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dfc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame {
+    padding: 1vh;
+    height: 95vh;
+    margin: 15px;
+}
+
+#show {
+    margin-left: 2.5%;
+    width: 67.5%;
+    background: rgb(195 199 193);
+    height: 93vh;
+    border: 8px solid rgb(255, 255, 255);
+    box-shadow: inset -1px 0px 12px 6px grey;
+}
+
+#title {
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#showbox {
+    border: 8px solid rgb(255, 255, 255);
+    height: 65vh;
+    width: 55vw;
+    margin-top: 10px;
+    box-shadow: 7px 7px 20px -5px grey;
+}
+
+#work {
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2.5%;
+    width: 30%;
+    background: rgb(195 199 193);
+    height: 93vh;
+    border: 8px solid rgb(255, 255, 255);
+    box-shadow: inset 7px 7px 20px -5px grey;
+    justify-content: space-between;
+}
+
+.box h2 {
+    text-align: center;
+}
+
+.color {
+    margin: 10px;
+    padding: 10px 30px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.color h3 {
+    font-size: 27px;
+}
+
+.color h4 {
+    margin-top: 8px;
+}
+
+input {
+    width: 20vw;
+}
+
+#output {
+    user-select: text;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 16px;
+    width: fit-content;
+    background: white;
+}
+
+@media only screen and (max-width: 960px) {
+    #title {
+        font-size: 20px;
+    }
+    .color {
+        margin: 10px;
+        padding: 10px 10px;
+        background: rgb(167, 167, 167);
+        border: 0px solid rgb(255, 255, 255);
+    }
+    #output {
+        font-size: 12px;
+    }
+    @media only screen and (max-width: 550px) {
+        #frame {
+            flex-direction: column;
+        }
+        #show {
+            width: 100%;
+            margin: auto;
+            height: 50vh;
+        }
+        #work {
+            height: fit-content;
+            margin-top: 20px;
+            text-align: left;
+            width: 100%;
+        }
+        .color {
+            padding: 20px;
+        }
+        .color h3 {
+            font-size: 17px;
+        }
+        .color h4 {
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        input {
+            width: 70vw;
+        }
+        #output {
+            margin-bottom: 4px;
+        }
+    }
+}
