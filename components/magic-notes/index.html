@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'poppins',sans-serif;
+        }
+
+
+        .container {
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgb(70, 78, 151);
+        }
+
+        .card {
+            border-radius: 20px;
+            width: 100%;
+            background-color: darkslategrey;
+        }
+
+        .cardo {
+            border-radius: 20px;
+            width: 30%;
+            background-color: rgb(126, 179, 179);
+        }
+.container .head{
+    background-color: rgba(206, 221, 221, 0.822);
+    border-radius: 20px;
+    color: white;
+}
+        .card-body {
+            border-radius: 10px;
+margin-bottom: 10px;
+         
+        }
+
+        .cards-body {
+            border-radius: 10px;
+    height: 200px;
+    overflow-y:auto;
+    scroll-padding-right: 10px;
+    scrollbar-width: 2px;
+  padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    box-shadow: 1px 1px 20px 0px #0000006b;
+        }
+        .card-text{
+            overflow: auto;
+        }
+.fa-sticky-note-o{
+    font-size: 40px;
+    color
+    :white;
+}
+        .delb {
+            width: 12%;
+    position: absolute;
+    text-align: end;
+    
+    margin-bottom: 10px;
+    bottom: 0px;
+    float: right;
+    margin-top: 120px;
+    border-radius: 20px;
+        }
+ .adn {
+    cursor: pointer;
+   
+    width: 4.9%;
+    height: 52px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.srh{
+    border: 1px solid rgb(70, 78, 151);
+    color:  rgb(70, 78, 151);
+}
+.srh:hover{
+    border: 1px solid rgb(70, 78, 151);
+    background-color: rgb(70, 78, 151);
+    color: white;
+}
+    </style>
+    <title>Magic notes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+        <a class="navbar-brand ml-2" href="#"> One tip notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Social
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">stackoverflow</a>
+                        <a class="dropdown-item" href="#"> linkedin</a>
+                        <a class="dropdown-item" href="#">facebook</a>
+                        <a class="dropdown-item" href="#">twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">instagram</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchTxt"class="form-control mr-sm-2" type="search" placeholder="Search notes" aria-label="Search">
+                <button class="btn srh btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <h1 class="headd">Welcome to magic notes</h1>
+        <div class="card">
+            <div class="card-body">
+
+
+                <h5 class="card-title"><span style="color:white"><i class="fa mr-2 fa-pencil" aria-hidden="true"></i></span>Type your note here...</h5>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" placeholder='topic:-  
+note:-'' id="addTxt" rows="3"></textarea>
+                </div>
+                <button type="button" id="addBtn" class="btn adn br-30 btn-primary"><i class="fa fa-plus-square"style="font-size:30px" aria-hidden="true"></i></button>
+
+            </div>
+        </div>
+
+
+        <div id="notes" class="row container-fluid"> 
+            
+            
+        </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>  <script src="app.js"></script>
+</body>
+
+</html>
