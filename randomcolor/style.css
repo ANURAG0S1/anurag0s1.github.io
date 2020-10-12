@@ -1,22 +1,96 @@
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    color: white;
+    /* list-style-type: none; */
 }
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h-list {
+    display: none;
+    position: absolute;
+    left: 50%;
+    width: 250px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(121, 121, 121);
+    padding: 20px;
+    border-radius: 30px;
+    border: 0px solid #000;
+    cursor: pointer;
+}
+
+#ite {
+    border-radius: 20px;
+    /* border: 1px solid #000; */
+    padding: 10px;
+    background: rgb(206, 206, 206);
+    padding-right: 0px;
+    overflow-y: scroll;
+    height: 300px;
+    max-height: 300px;
+}
+
+#ite li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.HIST {
+    margin: 30px;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background: #000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .full {
-  height: 100px;
-  background-color: rgb(60, 202, 31);
-  width: 100px;
-  display: flex;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  cursor: pointer;
+    height: 40px;
+    background-color: rgb(99 99 99);
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px black, -1px -1px 11px #eaeaea;
+    cursor: pointer;
+    user-select: none;
+}
+
+.color {
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    width: 280px;
+    text-align: center;
+    height: 50px;
+    box-shadow: 1px -1px 12px -2px #333232;
+    border-radius: 20px;
+}
+
+.color span {
+    color: rgb(0, 0, 0);
 }
