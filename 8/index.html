@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aos.css" />
     <title>ANURAG</title>
 </head>
 
@@ -26,15 +27,15 @@
             <li class="menu " id="menu-5"><a href="#" style="color: black;">Log in</a></li>
         </div>
     </div>
-    <div class="page" id="page-1">
+    <div class="page" id="page-1" style="overflow-x: hidden;">
         <div class="text-1 acc fc">
-            <h1 class="nt">Collaborative user research</h1>
+            <h1 class="nt" data-aos="fade-in">Collaborative user research</h1>
             <h4 class="nt">interactive methods to conduct<br>user research and report</h4>
             <div class="mail"><input class="dib bd" placeholder="@mail us here" type="text">
                 <button class="dib bd">try for free</button>
             </div>
         </div>
-        <div class="image"></div>
+        <div class="image" data-aos="zoom-out"></div>
     </div>
 
     <div class="page" id="page-2">
@@ -56,7 +57,7 @@
                 </div>
             </div>
             <div id="right" class="cmtt">
-                <div class="img"></div>
+                <div class="img" data-aos="slide" style="overflow: hidden;"></div>
             </div>
         </div>
     </div>
@@ -80,7 +81,7 @@
             <h1 class="nt">explore projects completed in talebook</h1>
         </div>
         <DIV class="PROJECTS  fr">
-            <DIV class="flex" id="flex-1">
+            <DIV class="flex" id="flex-1" data-aos="slide-up">
                 <div class="logo" id="logo-1"></div>
                 <div class="flex-text">
                     <h3 class="nt">
@@ -89,7 +90,7 @@
                     <h5 class="nt">by shehzad alam</h5>
                 </div>
             </DIV>
-            <DIV class="flex" id="flex-2">
+            <DIV class="flex" id="flex-2" data-aos="slide-up">
                 <div class="logo" id="logo-1"></div>
                 <div class="flex-text">
                     <h3 class="nt">
@@ -100,7 +101,7 @@
                     </h5>
                 </div>
             </DIV>
-            <DIV class="flex" id="flex-3">
+            <DIV class="flex" id="flex-3" data-aos="slide-up">
                 <div class="logo" id="logo-1"></div>
                 <div class="flex-text">
                     <h3 class="nt">
@@ -113,13 +114,13 @@
             </DIV>
         </DIV>
     </div>
-    <div class="page" id="page-6">
+    <div class="page" id="page-6" data-aos="slide-up">
         <div class="text-1 text-6">
             <h1 class=" nt">Each project has its own story</h1>
             <h1 class="nt">
                 tell yours with talebook
             </h1>
-            <button class="dib bd">try for free</button>
+            <button class="dib bd" data-aos="slide-up">try for free</button>
         </div>
         <div class="footer  acc fc">
             <div class="logo-icon"></div>
@@ -137,7 +138,10 @@
                 <li>privacy terms</li>
             </div>
         </div>
-
+        <script src="aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="main.js"></script>
 </body>
 
