@@ -1,0 +1,171 @@
+@media only screen and (max-width: 600px) {
+    body {
+        color: black;
+        /* background: rgb(31, 31, 54); */
+    }
+    #logo h1 span {
+        font-weight: bold;
+        font-size: larger;
+        color: orangered;
+    }
+    .item {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .txt {
+        margin: auto;
+        width: 90vw;
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    .txt h1 {
+        font-size: 23px;
+        font-weight: bold;
+    }
+    #front-page {
+        height: 75vh;
+    }
+    .btnbox {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnbox a {
+        padding: 30px 30px;
+        padding-bottom: 10px;
+    }
+    #email h1 {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+    #navbar {
+        height: 100px;
+        flex-direction: column;
+    }
+    .page {
+        padding: 0;
+    }
+    #logo {
+        height: 50px;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    #navbar ul {
+        transform: translate(0);
+        display: flex;
+        margin: auto;
+        width: fit-content;
+    }
+    .top-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    #second-page,
+    #third-page {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        flex-direction: column;
+    }
+    #third-page {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .l-img {
+        width: 60vw;
+        height: 200px;
+    }
+    .btn-main {
+        border-radius: 6px;
+        margin-top: 12px;
+        padding: 6px 8px;
+    }
+    .texxt {
+        padding-top: 25px;
+        width: 80vw;
+        height: fit-content;
+    }
+    .texxt p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .texxt h1 {
+        width: 100%;
+        font-size: 18px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .txt h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    #fourth-page .img {
+        padding: 10px;
+        margin-top: 100px;
+    }
+    .img p {
+        margin-top: 0;
+        font-size: 10px;
+        width: 260px;
+        font-weight: normal;
+    }
+    .limg {
+        float: none;
+        margin-right: 0px;
+    }
+    .img h3 {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    #email {
+        background: white;
+        width: 100vw;
+        text-align: center;
+    }
+    .email {
+        padding: 0;
+        margin: auto;
+    }
+    .left-2 {
+        width: 80vw;
+    }
+    .right-2 {
+        width: 80vw;
+    }
+    .chick {
+        margin: auto;
+        margin-top: 30px;
+        width: 80vw;
+        border-radius: 10px;
+    }
+    #footer {
+        height: 30vh;
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    #footer #navbar .flex {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #footer #navbar .flex .item {
+        margin: 8px 5px;
+    }
+    .qm {
+        padding-top: 40px;
+        width: 50vw;
+        margin: auto;
+    }
+    .play {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding-left: 17px;
+    }
+}
