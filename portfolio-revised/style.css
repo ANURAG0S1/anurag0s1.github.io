@@ -6,6 +6,7 @@
     list-style-type: none;
     text-decoration: none;
     transition: 200ms;
+    cursor: url(./img/cursor.png), default;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
@@ -59,7 +60,7 @@ button {
 }
 
 .item {
-    width: 60vw;
+    width: 80vw;
     font-family: righteous;
     font-size: 90px;
     font-weight: bolder;
@@ -84,7 +85,7 @@ button {
     margin-top: 0px;
     font-size: 60px;
     margin-right: -34px;
-    background: rgb(255 0 0);
+    background: rgb(255, 0, 0);
 }
 
 .hidden-text .item {
@@ -205,33 +206,34 @@ button {
     display: flex;
     padding: 0;
     flex-direction: row;
+    transform: translateX(20px);
     animation: animate 10s linear infinite;
 }
 
 @keyframes animate {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0%+ 10px);
     }
     24.5% {
-        transform: translateX(0%);
+        transform: translateX(calc(0% + 10px));
     }
     25% {
-        transform: translateX(-100%);
+        transform: translateX(calc(-100% + 10px));
     }
     49.5% {
-        transform: translateX(-100%);
+        transform: translateX(calc(-100% + 10px));
     }
     50% {
-        transform: translateX(-200%);
+        transform: translateX(calc(-200% + 10px));
     }
     74.5% {
-        transform: translateX(-200%);
+        transform: translateX(calc(-200% + 10px));
     }
     75% {
-        transform: translateX(-300%);
+        transform: translateX(calc(-300% + 10px));
     }
     99.5% {
-        transform: translateX(-300%);
+        transform: translateX(calc(-300% + 10px));
     }
 }
 
@@ -248,4 +250,35 @@ button {
 
 #mes:hover>#mes-tip {
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .item {
+        width: 90vw;
+        margin: auto;
+    }
+    #item-4 span {
+        display: inline-flex;
+        width: 30px;
+        line-height: 30px;
+        margin-top: 0px;
+        font-size: 1.8rem;
+        margin-right: -24px;
+        background: rgb(255, 0, 0);
+    }
+    .hidden-text .item-2 a {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #item-3 span {
+        font-size: 60px;
+    }
+    .name span {
+        margin-right: -10px;
+    }
+    .hidden-text .item-2 a {
+        font-size: 40px;
+    }
 }
