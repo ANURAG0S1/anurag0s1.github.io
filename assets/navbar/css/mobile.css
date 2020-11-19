@@ -1,0 +1,14 @@
+#bottom-bar {
+    z-index: 100;
+}
+
+#sidebarCollapse,
+#sidebar,
+#more-menu {
+    display: none;
+}
+
+#search input {
+    min-width: 120px;
+    max-width: 340px;
+}

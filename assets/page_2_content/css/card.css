@@ -1,0 +1,147 @@
+.card {
+    position: relative;
+    border-radius: 16px;
+    margin-top: 10px;
+    min-width: 230px;
+    border: 0;
+    max-width: 270px;
+    box-shadow: -3px -3px 30px -10px rgb(156 156 156 / 58%);
+}
+
+.topic-info li .fa,
+.topic-info li .fas {
+    width: 20px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+.star {
+    margin-right: 1px;
+    width: 12px;
+}
+
+h3 {
+    margin-left: 10px;
+    margin-top: 40px;
+    box-shadow: 2px -2px 20px 0px #00000017;
+    width: fit-content;
+    border-left: 3px solid rgb(0 0 255);
+    padding: 5px 10px;
+}
+
+.topic-name {
+    margin: 1% 0;
+    color: #495464;
+    font-size: 120%;
+    padding: 5px;
+}
+
+hr {
+    width: 70%;
+}
+
+.topic-info {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 2% 0;
+}
+
+.btn-practice {
+    width: 90%;
+    text-align: center;
+    margin-top: 12px;
+    font-size: small;
+    background-color: rgb(0 27 148);
+    border-radius: 2px;
+    border: 1px solid rgb(0 27 148);
+}
+
+h4.card-title-practice {
+    display: inline-block;
+    transform: translateX(-1.25rem);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 4px 20px 4px 1.25rem;
+    background: rgb(0 27 148);
+    color: rgb(255 255 255);
+    font-size: 18px;
+}
+
+.card-title,
+h5 {
+    color: rgb(4 87 216);
+}
+
+.card-deck {
+    flex-flow: wrap;
+    width: fit-content;
+    margin: auto;
+    align-items: right;
+}
+
+.card-deck::-webkit-scrollbar {
+    display: none;
+}
+
+.card-subtitle {
+    text-align: right;
+    color: rgb(169, 169, 169);
+    font-size: 12px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 200ms;
+    transform-origin: center;
+}
+
+.card:hover>.icon {
+    opacity: 1;
+}
+
+.card-links {
+    width: 80%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.card-body:hover>.circ {
+    transform: scale(1);
+    transition-duration: 200ms;
+    border-radius: 16px;
+}
+
+.container-fluids {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin: auto;
+        margin-top: 20px;
+        flex-grow: 1;
+        max-width: 88vw;
+    }
+}
+
+.rec .card h4 {
+    display: inline-block;
+    width: 50%;
+}
+
+.rec .card .lock-icon {
+    display: inline-block;
+    width: 20%;
+}
+
+.search {
+    width: 80px;
+    border: 1px solid blue;
+}

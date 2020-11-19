@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./../assets/navbar/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./../assets/navbar/css/mobile.css">
+    <title>navigation</title>
+</head>
+
+<body>
+
+    <div id="topbar" class="df">
+        <div id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div id="logo">Apnastudy </div>
+
+        <div id="right-top" class="df">
+            <div id="search">
+                <input type="text" placeholder="search all tests">
+                <button id="btn2"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="df">
+                <div class="item" id="item-1" onclick="Show_search()"><i class="fas fa-search"></i></div>
+                <div class="item" id="item-2"><i class="fa fa-bell"></i></div>
+                <div class="item" id="item-3"><i class="fa fa-user-circle"></i></div>
+            </div>
+        </div>
+    </div>
+    <div id="sidebar">
+    </div>
+    <div id="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet illo, eum debitis vitae dolorem sint quibusdam cum. Accusantium est rerum aliquid iste officiis reprehenderit nihil nemo esse sed exercitationem deleniti, facere voluptatem quidem placeat
+        tenetur, dolor pariatur natus ex. Animi optio minus ipsa architecto a at suscipit illo consequatur, exercitationem voluptatum voluptatem quidem blanditiis rem pariatur, eum incidunt aliquam accusamus repellendus quisquam iste ex alias et quod?
+        Atque ratione delectus hic dolor sit, id reprehenderit repellendus officia ipsum, earum magnam assumenda aliquid velit. Deserunt reprehenderit voluptatibus, quia id, temporibus qui distinctio dolores aliquid commodi earum sequi voluptate? Numquam,
+        odit nesciunt repellat porro necessitatibus voluptatum fuga reprehenderit iste nulla ex, atque expedita modi consectetur eligendi veritatis vitae eius quis repellendus enim consequuntur quia architecto iure! Quo sequi hic culpa quaerat eum quos
+        nulla, blanditiis corrupti animi. Doloremque sunt cupiditate molestias? Itaque ea quidem voluptate reiciendis, libero nam magni inventore vitae voluptates! Voluptatem placeat tempore amet sint explicabo expedita illo aliquid veniam, ad nostrum
+        sed, et pariatur ipsa quisquam voluptate obcaecati voluptatibus blanditiis. Ad, quod, quam placeat magnam maiores, maxime aspernatur aut amet a incidunt explicabo! Molestiae neque possimus iste ratione ipsam vitae veniam. Soluta sed ab corporis
+        natus nemo dignissimos possimus!
+    </div>
+    <ul id="bottom-bar" class="df">
+        <li class="menu active" id="menu-1">
+            <a href="#"> <span>
+
+        </span><i class="fa fa-home" aria-hidden="true"></i> </a>
+        </li>
+        <li class="menu" id="menu-2"><a href="#"><i class="fa fa-book-open"></i> <br>  </a> </li>
+        <li class="menu" id="menu-3"><a href="#"><i class="fa fa-pen"></i></a> </li>
+        <li class="menu" id="menu-4"><a href="#"><i class="fa fa-ellipsis-v"></i>  </a> </li>
+    </ul>
+    <div id="profile_menu">
+        <li class="pro" id="pro-1">Ref. no : 543</li>
+        <li class="pro" id="pro-2">tock Exchange</li>
+        <li class="pro" id="pro-3">Profile</li>
+        <li class="pro" id="pro-4">Help and FAQ</li>
+        <li class="pro" id="pro-5">Log out</li>
+    </div>
+    <div id="more-menu">
+        <li class="more" id="more-1">
+            <a href="#">Mega Test</a></li>
+        <li class="more" id="more-2">
+            <a href="#">Rapid Test</a></li>
+        <li class="more" id="more-3">
+            <a href="#">Current Affairs</a> </li>
+        <li class="more" id="more-4">
+            <a href="#">Solved doubts/answers</a> </li>
+        <li class="more" id="more-5">
+            <a href="#">Mega Test</a> </li>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+        });
+
+        $(document).on('click', 'ul li', function() {
+            $(this).addClass('active').siblings().removeClass('active')
+
+        });
+        $('#menu-4').on('click', function() {
+            $('#more-menu').toggleClass('active');
+        });
+        $('#item-3').on('click', function() {
+            $('#profile_menu').toggleClass('active');
+        });
+    </script>
+    <script src="./../assets/navbar/js/script.js"></script>
+</body>
+
+</html>

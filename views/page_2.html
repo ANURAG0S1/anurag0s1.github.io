@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../assets/navbar/css/style.css">
+    <link rel="stylesheet" href="./../assets/navbar/css/sidebar.css">
+    <link rel="stylesheet" href="./../assets/page_2_content/css/content.css">
+    <link rel="stylesheet" href="./../assets/page_2_content/css/card.css">
+    <link rel="stylesheet" href="./../assets/navbar/css/bottom_bar.css">
+    <title>practice page-2</title>
+</head>
+
+<body>
+
+    <div id="topbar" class="df">
+
+        <div id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div id="logo"> </div>
+
+        <div id="right-top" class="df">
+            <div id="search">
+                <input type="text" placeholder="search all tests">
+                <button id="btn2"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="df">
+                <div class="item" id="item-1" onclick="Show_search()"><i class="fas fa-search"></i></div>
+                <div class="item" id="item-2"><i class="fa fa-bell"></i></div>
+                <div class="item" id="item-3"><i class="fa fa-user-circle"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="sidebar" class="sidebar-container">
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#">
+                    <span class="sidebar-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="menu-text">Home</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <span class="sidebar-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                    <span class="menu-text">Practice</span>
+                    <span class="badge badge-pill badge-danger">2</span>
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Topics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Flash Cards</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <span class="sidebar-icon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                    <span class="menu-text">Mock Test</span>
+                    <span class="badge badge-pill badge-danger">10000+</span>
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Live Test</span>
+                            <span class="badge badge-pill badge-warning">Live</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Free Test</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Upcoming</span>
+                            </a></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="sidebar-icon"><i class="fa fa-gem" aria-hidden="true"></i></span>
+                    <span class="menu-text">Mega Test</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <span class="sidebar-icon"><i class="fa fa-newspaper" aria-hidden="true"></i></span>
+                    <span class="menu-text">Daily Dose</span>
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu2">
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Vocabulary Booster</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">Current Affairs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">The Hindu News</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="menu-text">The Hindu Analysis</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="sidebar-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                    <span class="menu-text">MCQfy</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="sidebar-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="menu-text">Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="sidebar-icon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                    <span class="menu-text">Register</span>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+    <div id="content">
+        <div id="back"><i class="fas fa-chevron-left"></i></div>
+        <div id="Search-c">
+            <input type="text">
+            <span id="s-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div id="section" class="section">
+            <h3>Trending topics</h3>
+            <div class="container-fluids"><br>
+                <div class="card-deck">
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <h3>recommended topics</h3>
+            <div class="container-fluids"><br>
+                <div class="card-deck">
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+                    <div class="card mycard ">
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Practice</h6>
+                            <h4 class="card-title-practice">Subject Name</h4>
+
+
+                            <h2 class="topic-name">Topic Name</h2>
+                            <hr>
+                            <ul class="topic-info">
+                                <li>
+                                    <i class="fas fa-users"></i>100 Users</li>
+                                <li>
+                                    <i class="fas fa-question"></i>50 Questions
+                                </li>
+                                <li>
+                                    <i class="fas fa-tasks"></i>15 Exercises
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star checked"></span>
+                            <span class="fa fa-star star"></span>
+
+                            <a href="#" class="btn btn-primary btn-practice ">Practice</a>
+
+                            </p>
+                            <span class="badge badge-secondary">Exam</span>
+                            <span class="badge badge-success">Exam</span>
+                            <span class="badge badge-danger">Exam</span>
+
+                            <span class="badge badge-info">Exam</span>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <ul id="bottom-bar" class="df">
+        <li class="active"><a><i class="fa fa-home" aria-hidden="true"></i><span>Home</span> </a></li>
+        <li><a><i class="fa fa-home" aria-hidden="true"></i> <span>Practice</span> </a></li>
+        <li><a><i class="fa fa-home" aria-hidden="true"></i><span>Test</span> </a></li>
+        <li id="more_menu_btn" onclick="more_menu()" class=""><a><i class="fa fa-home" aria-hidden="true"></i><span>More</span> </a></li>
+    </ul>
+    <div id="profile_menu">
+        <li class="pro" id="pro-1">Ref. no : 543</li>
+        <li class="pro" id="pro-2">tock Exchange</li>
+        <li class="pro" id="pro-3">Profile</li>
+        <li class="pro" id="pro-4">Help and FAQ</li>
+        <li class="pro" id="pro-5">Log out</li>
+    </div>
+    <div id="more-menu">
+        <li class="more" id="more-1">
+            <a href="#">Mega Test</a></li>
+        <li class="more" id="more-2">
+            <a href="#">Rapid Test</a></li>
+        <li class="more" id="more-3">
+            <a href="#">Current Affairs</a> </li>
+        <li class="more" id="more-4">
+            <a href="#">Solved doubts/answers</a> </li>
+        <li class="more" id="more-5">
+            <a href="#">Mega Test</a> </li>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+        });
+
+        $(document).on('click', 'ul li', function() {
+            $(this).addClass('active').siblings().removeClass('active')
+
+        });
+        $('#menu-4').on('click', function() {
+            $('#more-menu').toggleClass('active');
+        });
+        $('#item-3').on('click', function() {
+            $('#profile_menu').toggleClass('active');
+        });
+    </script>
+    <script src="./../assets/navbar/js/script.js"></script>
+</body>
+
+</html>
