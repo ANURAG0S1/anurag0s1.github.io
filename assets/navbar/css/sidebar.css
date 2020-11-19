@@ -1,0 +1,161 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #063c94;
+    border-color: #063c94;
+}
+
+.btn-info:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    top: 0;
+    position: sticky;
+    padding: 0px 10px;
+    width: 100%;
+    left: 0;
+    height: 70px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+/* ---------------------------------------------------
+        SIDEBAR STYLE
+    ----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 280px;
+    max-width: 280px;
+    background: rgb(0 27 148);
+    color: rgb(255 255 255);
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: calc(100vh - 50px);
+    transition: all 0.3s;
+}
+
+.menu-text {
+    color: #c7c7c7;
+    font-size: 14px;
+    padding: 2px 2px;
+    margin-left: 10px;
+}
+
+.menu-text:hover {
+    color: #fff;
+}
+
+#sidebar .badge {
+    float: right;
+    margin-right: 30px;
+}
+
+.sidebar-icon i {
+    font-size: 14px;
+}
+
+#sidebar li:hover .sidebar-icon {
+    color: yellow;
+}
+
+#pageSubmenu li:hover a .sidebar-icon1 {
+    color: yellow;
+}
+
+#pageSubmenu2 li:hover a .sidebar-icon1 {
+    color: yellow;
+}
+
+#homeSubmenu li:hover a .sidebar-icon1 {
+    color: yellow;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    /* border-bottom: 1px solid #47748b; */
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+}
+
+
+/* ---------------------------------------------------
+        CONTENT STYLE
+    ----------------------------------------------------- */

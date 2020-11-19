@@ -10,7 +10,6 @@
 body {
     background: white;
     color: black;
-    -webkit-font-smoothing: antialiased;
     font-family: Poppins, 'sans serif';
 }
 
@@ -18,7 +17,6 @@ input,
 button {
     font-size: 14px;
     border-radius: 20px;
-    padding: 6px 10px;
     border: 0 solid #000;
     font-family: Poppins, 'sans serif';
 }
@@ -33,10 +31,6 @@ button {
     display: none;
 }
 
-#sidebarCollapse {
-    /* margin-right: 10px; */
-}
-
 .df {
     display: flex;
     flex-direction: row;
@@ -45,6 +39,10 @@ button {
 #logo {
     font-size: 24px;
     font-weight: bold;
+    width: 100px;
+    margin-top: 5px;
+    height: 40px;
+    background: url(././../img/logo.png)no-repeat center center/contain;
 }
 
 #right-top {
@@ -62,12 +60,30 @@ button {
     transform: scale(0);
     transform-origin: right center;
     display: none;
+    transform: scale(0);
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#search input {
+    height: 30px;
+    padding: 4px 10px;
+}
+
+#search button {
+    height: 35px;
+    line-height: 35px;
+    margin-left: 8px;
+    width: 35px;
 }
 
 #topbar {
     color: white;
     display: flex;
     position: sticky;
+    z-index: 100;
     top: 0;
     left: 0;
     padding: 0px 20px;
@@ -190,12 +206,6 @@ button {
     color: white;
 }
 
-<<<<<<< Updated upstream
-#bottom-bar .active a {
-    color: blue;
-    /* color: white; */
-    padding: 5px 10px;
-=======
 @media screen and (max-width: 600px) {
     #bottom-bar {
         display: flex;
@@ -213,5 +223,4 @@ button {
         min-width: 120px;
         max-width: 340px;
     }
->>>>>>> Stashed changes
 }
