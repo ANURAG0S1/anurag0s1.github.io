@@ -144,6 +144,7 @@ h5 {
     .card {
         margin: auto;
         margin-top: 20px;
+        min-width: 270px;
         flex-grow: 1;
         max-width: 88vw;
     }
