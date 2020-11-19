@@ -23,6 +23,7 @@
 .star {
     margin-right: 1px;
     width: 12px;
+    color: darkblue;
 }
 
 h3 {
@@ -40,9 +41,8 @@ h3 {
 }
 
 .topic-name {
-    /* margin: 1% 0; */
     color: #495464;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 hr {
@@ -79,8 +79,8 @@ hr {
 h4.card-title-practice {
     display: inline-block;
     transform: translateX(-1.25rem);
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     padding: 4px 20px 4px 1.25rem;
     background: rgb(0 27 148);
     color: rgb(255 255 255);
