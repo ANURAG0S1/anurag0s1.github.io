@@ -27,26 +27,26 @@
             <li class="menu " id="menu-5"><a href="#" style="color: black;">Log in</a></li>
         </div>
     </div>
-    <div class="page" id="page-1" style="overflow-x: hidden;">
-        <div class="text-1 acc fc">
-            <h1 class="nt" data-aos="fade-in">Collaborative user research</h1>
+    <div class="page" id="page-1" data-aos-duration="1000"  data-aos="fade-up" style="overflow-x: hidden;">
+        <div class="text-1 acc fc" > 
+            <h1 class="nt"  >Collaborative user research</h1>
             <h4 class="nt">interactive methods to conduct<br>user research and report</h4>
             <div class="mail"><input class="dib bd" placeholder="@mail us here" type="text">
                 <button class="dib bd">try for free</button>
             </div>
         </div>
-        <div class="image" data-aos="zoom-out"></div>
+        <div class="image" data-aos-duration="2000" data-aos="zoom-out"></div>
     </div>
 
-    <div class="page" id="page-2">
-        <div class="text-1 acc fc">
+    <div class="page" id="page-2" data-aos-duration="1000"  data-aos="fade-up">
+        <div class="text-1 acc fc" data-aos-duration="1200"  data-aos="fade-up">
             <span>trusted by over 500 companies</span>
             <h1 class="nt mt">Taleook has revolutionized the way<br> i`m conducting discovery phase
             </h1>
             <h6 class="nt mt">ANURAG <span id="des">google CEO</span> </h6>
         </div>
-        <div class="cmt mt fr">
-            <div id="left" class="cmtt">
+        <div class="cmt mt fr" >
+            <div id="left" class="cmtt" data-aos-duration="1600"  data-aos="">
                 <div class="textbox">
                     <h2 class="nt">Customize the design for<br> you project needs</h2>
                     <p>process build on based of web research with top design companies to make it fully customizable</p>
@@ -56,9 +56,12 @@
                     </div>
                 </div>
             </div>
-            <div id="right" class="cmtt">
-                <div class="img" data-aos="slide" style="overflow: hidden;"></div>
-            </div>
+            <div id="right" style="    display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;" class="" data-aos-duration="1600"  data-aos="fade-left">
+                 <img id="rotate_anime" src="./theme.png" alt=""></div>
+           
         </div>
     </div>
     <div class="page" id="page-3">
@@ -81,8 +84,12 @@
             <h1 class="nt">explore projects completed in talebook</h1>
         </div>
         <DIV class="PROJECTS  fr">
-            <DIV class="flex" id="flex-1" data-aos="slide-up">
-                <div class="logo" id="logo-1"></div>
+            <DIV class="flex" id="flex-1" data-aos-duration="1000" data-aos="slide-up">
+                <div class="img"  >
+
+                    <img width="200" src="./medi.jpg" alt="">
+                </div>
+
                 <div class="flex-text">
                     <h3 class="nt">
                         Meditation app discovery phase
@@ -90,8 +97,12 @@
                     <h5 class="nt">by shehzad alam</h5>
                 </div>
             </DIV>
-            <DIV class="flex" id="flex-2" data-aos="slide-up">
-                <div class="logo" id="logo-1"></div>
+            <DIV class="flex" id="flex-2"  data-aos-duration="1500" data-aos="slide-up">
+                <div class="img  ">
+
+                    <img width="200" src="./const.jpg" alt="">
+                </div>
+
                 <div class="flex-text">
                     <h3 class="nt">
                         Construction blueprint feature
@@ -101,8 +112,10 @@
                     </h5>
                 </div>
             </DIV>
-            <DIV class="flex" id="flex-3" data-aos="slide-up">
-                <div class="logo" id="logo-1"></div>
+            <DIV class="flex" id="flex-3" data-aos-duration="2000" data-aos="slide-up">
+                <div class="img ma" id="">
+                    <img width="200" src="./illustration-bitcoin-concept_53876-43954.jpg" alt="">
+                </div>
                 <div class="flex-text">
                     <h3 class="nt">
                         Crypto currency exchange research
@@ -114,7 +127,7 @@
             </DIV>
         </DIV>
     </div>
-    <div class="page" id="page-6" data-aos="slide-up">
+    <div class="page" id="page-6" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos="slide-up">
         <div class="text-1 text-6">
             <h1 class=" nt">Each project has its own story</h1>
             <h1 class="nt">
@@ -138,9 +151,11 @@
                 <li>privacy terms</li>
             </div>
         </div>
-        <script src="aos.js"></script>
+        <script src="aos.min.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+                once: true
+            });
         </script>
         <script src="main.js"></script>
 </body>
