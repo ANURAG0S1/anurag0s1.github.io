@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
-  xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-  xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg2"
+<!-- Created with Inkscape (https://www.inkscape.org/) -->
+<svg xmlns:inkscape="https://www.inkscape.org/namespaces/inkscape"
+  xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="https://www.w3.org/2000/svg"
+  xmlns:cc="https://creativecommons.org/ns#" xmlns:dc="https://purl.org/dc/elements/1.1/"
+  xmlns:sodipodi="https://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="https://www.w3.org/2000/svg"
+  xmlns:ns1="https://sozi.baierouge.fr" xmlns:xlink="https://www.w3.org/1999/xlink" id="svg2"
   sodipodi:docname="New document 1" viewBox="0 0 500 500" version="1.1" inkscape:version="0.47 r22583">
   <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="-4" pagecolor="#ffffff"
     inkscape:snap-global="false" inkscape:window-maximized="1" inkscape:zoom="1.4142136" inkscape:window-x="-4"
@@ -52,10 +52,10 @@
     <rdf:RDF>
       <cc:Work>
         <dc:format>image/svg+xml</dc:format>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:type rdf:resource="https://purl.org/dc/dcmitype/StillImage" />
+        <cc:license rdf:resource="https://creativecommons.org/licenses/publicdomain/" />
         <dc:publisher>
-          <cc:Agent rdf:about="http://openclipart.org/">
+          <cc:Agent rdf:about="https://openclipart.org/">
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
@@ -77,10 +77,10 @@
           </rdf:Bag>
         </dc:subject>
       </cc:Work>
-      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      <cc:License rdf:about="https://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="https://creativecommons.org/ns#Reproduction" />
+        <cc:permits rdf:resource="https://creativecommons.org/ns#Distribution" />
+        <cc:permits rdf:resource="https://creativecommons.org/ns#DerivativeWorks" />
       </cc:License>
     </rdf:RDF>
   </metadata>
