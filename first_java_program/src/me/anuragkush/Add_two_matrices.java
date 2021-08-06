@@ -15,7 +15,7 @@ public class Add_two_matrices {
                 System.out.print(arr3[i][j]);
                 System.out.print("  ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
