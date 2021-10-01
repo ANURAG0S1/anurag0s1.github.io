@@ -1,0 +1,17 @@
+{
+  "name": "mycustomnode_modules",
+  "version": "1.0.0",
+  "description": "practicing modules from frontend masters",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "practice"
+  ],
+  "author": "anurag kushwaha",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
