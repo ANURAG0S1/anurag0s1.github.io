@@ -2,84 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" href="style.css" />
-      
-    <title>PORTFOLIO</title>
-    <style>canvas {
-  display:block;
-  margin:auto;
-  background:#ecf0f1;
-}</style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Anurag</title>
 </head>
 
 <body>
-    <div id="menu-scr">
-        <div id="center">
-            <li><a href="./8/index.html"> Taleboook</a></li>
-            <li><a href="./DISENO/index.html">DISENO</a></li>
-            <li><a href="././portfolio-revised/index.html">PORTFOLIO</a></li>
-            <li><a href="././VICTORYA/index.html">Food ordering</a></li>
+  <section class="full-page df col front-page container">
+    <nav class="df  sb center pd">
+      <div class="logo mark white">ANURAG<span class="color1">.</span></div>
+      <ul class="menu df">
+        <li><a class="pd active" href="#about">About</a></li>
+        <li><a class="pd" href="#services">Services</a></li>
+        <li><a class="pd" href="#">Experience</a></li>
+        <li><a class="pd" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="df ma col center">
+      <div class="profile"></div>
+      <div style="margin-top: 20px" class="logo mark white">
+        Anurag<span class="color1">kush</span>
+      </div>
+      <p class="">Web developer</p>
+      <div class="df mt5">
+        <a href=""><i class="fab fa-behance"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fas fa-basketball-ball"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+      </div>
 
-            <li><a href="./online music/">Musica</a></li>
-            <li><a href="./Responsive gallery/">picOcean</a></li>
-            <li><a href="./food ordering website/">Food ordering</a></li>
-
-            <li><a href="./PHOTOLAKE/index.html">Photolake</a></li>
-            <li><a href="./gradient generator/index.html">gradient picker</a></li>
-            <li><a href="./old homepage -1/index.html">old homepage ui</a></li>
-            <li><a href="https://picosa.netlify.app">picosa</a></li>
-
-                        <li><a href="./components/magic-notes/index.html">picosa</a></li>
-
-                                    <li><a href="./8/index.html">8</a></li>
-                        <li><a href="./iglink/index.html">iglink</a></li>
-
-        </div>
-        <div id="cl" onclick="rp()">+</div>
     </div>
-    <div class="name">
-      <canvas id="myCanvas"></canvas>
+  </section>
+
+  <section id="about" style="height: 70vh;padding-top: 70px;" class="container">
+    <h1 class="mark mtx" style="padding-bottom: 60px;">About Me</h1>
+    <div class="df vw-s pd">
+      <div class="profile-intro df bd5 bgwhite shadow" style="padding: 30px 20px;">
+        <h1 class="center name"> Anurag</h1>
+        <div class="pd  df col">
+          <p class="pd color3 justify profile_info_text">
+            i am a Frontend developer(aspiring MERNstack developer) with an experience of 2 years dealing with html css
+            and javascript codes. i do also have a good expertise in js frameworks like nodejs and react. i currently do
+            freelancing as a side hustle beside all that i am a engineering student(2023-batch) pursuing B.tech from <a
+              class="color1" href="https://www.starexuniversity.com"> Starex University</a>.
+          </p>
+          <br />
+          <button class="bgcolor1 white pd bd5 shadow Download"
+            style="margin :20px; font-weight: bold;width: fit-content;">
+            Download CV
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="img">
-        <img id="img" src="./img/pngfuel.com.png" alt="" />
     </div>
-    <div class="full-screen">
-        <div class="corner lt">
-            <div id="ham" onclick="showe()"></div>
-            <div id="mainn" class="box-1">
-                <div id="cros" onclick="hidee()"></div>
-                <li class="menu items-1">HOME</li>
-                <li class="menu items-2">SKILLLS</li>
-                <li class="menu items-3" onclick="pr()">PROJECTS</li>
-                <li class="menu items-4"><a href="./exp.html">EXPERIENCE</a></li>
-                <li class="menu items-5"><a href="./about.html">ABOUT</a> .</li>
-            </div>
+
+  </section>
+  <section id="experience" class="container">
+    <h1 class="mark mtx">Experience</h1>
+    <div class="df vw-s shadow bd5 pd " style="padding:30px 40px;">
+
+      <div class="df col half">
+
+        <div class="rel">
+          <div class="exp">
+            <p class="year smallfont color3">
+              <i class="fas color1 fa-graduation-cap"></i>October 2020 - December 2020
+            </p>
+            <h2>Frontend Development at RYD labs</h2>
+            <p class="">
+              designed and made website for students who are prepapring for competitive exams. there me and our team
+              members together made the Frontend
+            </p>
+            <span class="line"></span>
+          </div>
         </div>
-        <div class="corner rt">
-            <div class="box-1 box-a">
-                <input id="inpu" type="text" />
-                <div class="search-icon" onclick="inp()"></div>
-                <div class="search-icone" onclick="hidie()"></div>
-            </div>
+        <div class="rel">
+          <div class="exp">
+            <p class="year smallfont color3">
+              <i class="fas color1 fa-graduation-cap"></i> present
+            </p>
+            <h2>currently working as a Frontend developer at <a style="color: orangered;"
+                href="https://www.trainman.in">trainman</a></h2>
+            <p class="">
+
+              maintaining the frontend experience of the product </p>
+            <span class="line"></span>
+          </div>
         </div>
-        <div class="corner lb">
-            <div class="box-1">
-                <li class="menu skil" onclick="pr()">Projects</li>
-                <li class="menu"><a href="./skills.html">Skills</a></li>
-            </div>
-        </div>
-        <div class="corner rb">
-            <div class="box-1 box-last">
-                <li>
-                    <a href="./about.html">Know more</a>
-                </li>
-                <li>Hire me!</li>
-            </div>
-        </div>
+
+      </div>
+      <div class="df col half">
+        <img src="./assets/ex.png" height="270" width="270" style="transform: translateY(50px);" alt="experience">
+      </div>
     </div>
-    <script src="app.js"></script>
+  </section>
+
+
+  <section id="recent" class="container">
+    <h1 class="mark mtx">Recent Works</h1>
+
+    <div class="mtl vw-s" style="position: relative;">
+      <ul class="df proj">
+        <li class="bd5">
+
+          <img src="./assets/projects/p-1.png" height="200" alt="">
+          <p class="project-text">
+            <b>
+              Musica: Music Player
+            </b>
+            <br>
+
+          </p>
+        </li>
+        <li class="bd5">
+
+          <img src="./assets/projects/p-2.png" height="200" alt="">
+          <p class="project-text">
+            <b>
+              Talebook: A story Teller
+            </b>
+            <br>
+
+          </p>
+        </li>
+        <li class="bd5">
+
+          <img src="./assets/projects/p-3.png" height="200" alt="">
+          <p class="project-text">
+            <b>
+              Victorya: A food shop
+            </b>
+            <br>
+
+          </p>
+        </li>
+        <li class="bd5">
+
+          <img src="./assets/projects/p-4.png" height="200" alt="">
+          <p class="project-text">
+            <b>
+              Picosa: A photo vagabond
+            </b>
+            <br>
+
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="contact" class="container" style="padding-top: 20px; ">
+    <h1 class="mark">Get in Touch</h1>
+    <div class="df vw-s">
+      <div class="half pd" style="max-width: fit-content; align-self: flex-start;">
+        <h2>Lets talk about everything!</h1>
+          <p>just a e-mail away</p>
+      </div>
+      <div class="df col mt5 pd " style="flex-grow: 1; max-width: 600px;">
+        <div class="df ">
+          <input type="text" placeholder="Your name" class="half shadow mr">
+          <input type="text" placeholder="Your name" class="half shadow mr">
+        </div>
+        <input type="text" placeholder="subject" class="mr shadow">
+        <textarea name="Message" id="message" cols="20" rows="10" class="shadow mt5 bd5 mr"></textarea>
+        <button class="bgcolor1 mr pd bd5" style="max-width: fit-content;">Send Message</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(document).ready(function () {
+      $('ul.menu li a').click(function () {
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
 </body>
 
 </html>
