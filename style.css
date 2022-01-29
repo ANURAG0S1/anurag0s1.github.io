@@ -296,10 +296,10 @@ ul.categ li{
   margin-top: 60px;
 }
 .skill-meters{
-  order: 2;
+  order: 1;
 }
 .profile-info_text{
-  order: 1;
+  order: 2;
 }
 /* .Download{
   order: 3;} */
