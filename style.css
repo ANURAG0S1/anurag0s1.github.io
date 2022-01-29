@@ -365,9 +365,9 @@ ul.categ li{
   }
  
   .skill-meters{
-    order: 1;
+    order: 2;
   }
   .profile_info_text{
-    order: 2;
+    order: 1;
   }
 }
