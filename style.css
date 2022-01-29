@@ -376,4 +376,7 @@ ul.categ li{
   .logo{
     width: 100%;
   }
+  .mobilenot{
+    display: none;
+  }
 }
