@@ -263,6 +263,7 @@ ul.categ li{
 }
 .proj{
   flex-wrap: wrap;
+
   justify-content: start;
 }
 .proj li{
@@ -317,12 +318,29 @@ ul.categ li{
 .profile-intro .name{
   display: none;
 }
+#experience > div.df{
+  padding:30px 40px;
+}
 @media only screen  and (max-width:800px) {
   .vw-s{
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
 
+  }
+  #experience > div.df{
+    padding:30px 10px;
+  }
+  .exp{
+    padding: 0;
+  }
+  .proj{
+    flex-direction: column;
+  }
+  .proj li{
+    border: 0px;
+    max-width: 90vw;
+    margin: 10px auto;
   }
   .mark {
  padding-top: 90px;
@@ -335,12 +353,15 @@ ul.categ li{
  .container{
    padding: 10px 10px;
  }
+ .imgbox img{
+   
+ }
   .profile{
     margin: auto;
     margin-bottom: 30px;
   }
   .profile-intro{
-    min-width: 500px;
+    min-width: 200px;
   }
  
   .skill-meters{
