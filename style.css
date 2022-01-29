@@ -370,4 +370,10 @@ ul.categ li{
   .profile_info_text{
     order: 1;
   }
+  .menu{
+    display: none;
+  }
+  .logo{
+    width: 100%;
+  }
 }
