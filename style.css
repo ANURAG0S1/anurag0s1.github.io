@@ -286,8 +286,7 @@ ul.categ li{
    color: orangered;
   z-index: 20;
   bottom: 0px;
-   transform: translateY;
-   padding-left: 30px;
+    padding-left: 30px;
    background: linear-gradient(to bottom,rgba(95, 93, 93, 0) ,#23232791);
    overflow: hidden;
    width: 100%;
@@ -322,7 +321,16 @@ ul.categ li{
   .vw-s{
     display: flex;
     flex-wrap:wrap;
+    flex-direction: column;
 
+  }
+  .mark {
+ padding-top: 90px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  section{
+    min-height: 100vh;
   }
  .container{
    padding: 10px 10px;
@@ -334,11 +342,7 @@ ul.categ li{
   .profile-intro{
     min-width: 500px;
   }
-  /* .Download{
-    order: 3;
-    /* transform: translateX(calc(100% + 90px)) translateY(35px); */
-
-  
+ 
   .skill-meters{
     order: 1;
   }
