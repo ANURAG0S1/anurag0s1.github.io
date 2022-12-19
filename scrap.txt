@@ -1,0 +1,84 @@
+/* 
+ 
+body.light {
+    background-color: var(--primary);
+    ;
+}
+
+body.light .cursor,
+body.light .cursor2,
+body.light .cursor3 {
+    mix-blend-mode: normal;
+}
+
+body.light .cursor2 {
+    border: 2px solid #1f2029;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light .cursor2.hover {
+    background: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+body.light .logo-wrap a {
+    color: #1f2029;
+}
+
+body.light .menu-icon__line {
+    background-color: #1f2029;
+}
+
+body.light .nav:before {
+    background: rgba(235, 235, 235, 0.6);
+}
+
+body.light .nav:after {
+    background: rgba(250, 250, 250, 1);
+}
+
+body.light .nav__list-item a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light .nav__list-item a:hover {
+    color: #1f2029;
+}
+
+body.light .nav__list-item.active-nav a {
+    color: #1f2029;
+}
+
+body.light .switch-wrap h1 {
+    color: #000;
+}
+
+body.light .switch-wrap p span:nth-child(2):before {
+    opacity: 1;
+    background-color: #000;
+}
+
+body.light .switch-wrap p span:nth-child(1):before {
+    opacity: 0;
+} */
+
+<!-- <section class="full-page df col front-page container">
+<nav class="df sb center pd animate__fadeInUp animate__animated">
+  <div class="logo mark t-white">ANURAG<span class="color1">.</span></div>
+  <ul class="menu df">
+    <li><a class="pd active" href="#about">About</a></li>
+    <li><a class="pd" href="#experience">Experience</a></li>
+    <li><a class="pd" href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="df ma col center">
+  <div class="profile animate__fadeInUp animate__animated"></div>
+  <div
+    class="logo mark t-white mobilenot animate__fadeInUp animate__animated"
+  >
+    Anurag<span class="color1">kush</span>
+  </div>
+  <p class="animate__fadeInUp animate__animated 2s">Web developer</p>
+</div>
+</section> -->

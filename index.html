@@ -1,189 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/circle.css" />
+    <link rel="stylesheet" href="./assets/css/galxy.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-   <title>Anurag</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
 
-<body style="width:100vw; overflow-x: hidden;">
-  <section class="full-page df col front-page container">
-    <nav class="df  sb center pd">
-      <div class="logo mark white">ANURAG<span class="color1">.</span></div>
-      <ul class="menu df">
-        <li><a class="pd active" href="#about">About</a></li>
-         <li><a class="pd" href="#experience">Experience</a></li>
-        <li><a class="pd" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="df ma col center">
-      <div class="profile"></div>
-      <div  style="margin-top: 20px" class="logo mark white mobilenot">
-        Anurag<span class="color1">kush</span>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <title>Anurag</title>
+  </head>
+
+  <body style="width: 100vw; overflow-x: hidden" onload="initZoom()">
+    <!-- <nav class="df">
+      <div class="logo">
+        <div class="full-page hidden-menu w-100 h-100">
+          <div class="cross">
+            <div class="a"></div>
+            <div class="b"></div>
+          </div>
+          <div class="df menus">
+            <div class="text-menu w-50 color1">
+              <div><a href="#">Home</a></div>
+              <div><a href="/projects.html">Projects</a></div>
+              <div><a href="/about.html">About me</a></div>
+            </div>
+            <div class="squared-menu">
+              <div class="df w-50">
+                <div class="square-menu-item square-menu-item-1">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Github"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fab fa-github"></i>
+                      Email
+                    </div>
+                  </a>
+                </div>
+                <div class="square-menu-item square-menu-item-2">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Twitter"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fas fa-envelope"></i>
+                      Email
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="w-50 df">
+                <div class="square-menu-item square-menu-item-3">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Twitter"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fab fa-linkedin"></i>
+                      LinkedIn
+                    </div>
+                  </a>
+                </div>
+                <div class="square-menu-item square-menu-item-4">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Twitter"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fab fa-twitter"></i>
+                      Twitter
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="">Web developer</p>
+
       <div class="df mt5">
-        <a href=""><i class="fab fa-behance"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fas fa-basketball-ball"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/anurag0s1" title="Twitter" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a title="Github" href="https://github.com/ANURAG0S1"
+          ><i class="fab fa-github"></i
+        ></a>
       </div>
+    </nav> -->
 
+    <header class="cd-header">
+      <div class="header-wrapper">
+        <div class="logo-wrap">
+          <a href="#" class="hover-target"><span>ANURAG</span></a>
+        </div>
+
+        <div class="nav-but-wrap">
+          <div class="menu-icon hover-target">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav">
+            <a href="#" class="hover-target">home</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="hover-target">studio</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="hover-target">news</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="hover-target">contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </section>
 
-  <section id="about" style="height: 70vh;padding-top: 70px;" class="container">
-    <h1 class="mark mtx" style="padding-bottom: 60px;">About Me</h1>
-    <div class="df vw-s pd">
-      <div class="profile-intro df bd5 bgwhite shadow" style="padding: 30px 20px;">
-        <h1 class="center name"> Anurag</h1>
-        <div class="pd  df col">
-          <p class="pd color3 justify profile_info_text">
-            i am a Frontend developer(aspiring MERNstack developer) with an experience of 2 years dealing with html css
-            and javascript codes. i do also have a good expertise in js frameworks like nodejs and react. i currently do
-            freelancing as a side hustle beside all that i am a engineering student(2023-batch) pursuing B.tech from <a
-              class="color1" href="https://www.starexuniversity.com"> Starex University</a>.
-          </p>
-          <br />
-          <button class="bgcolor1 white pd bd5 shadow Download"
-            style="margin :20px; font-weight: bold;width: fit-content;">
-            Download CV
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor2"></div>
+    <div class="cursor3" id="cursor3"></div>
+
+    <section class="full-page container t-white front-page">
+      <div>
+        <div class="screen-center-h">
+          <h1 class="mark-1 animate__fadeInUp animate__animated 1s">
+            Hi, I'm Anurag Kushwaha
+          </h1>
+
+          <h1 class="mark animate__fadeInUp animate__animated 2s">
+            <b> I turn logic into pixels </b>
+          </h1>
+
+          <div class="animate__fadeInUp animate__animated 3s">
+            <p>
+              I am a Creative Developer and Web Designer specializing in
+              creating web apps with clean user interface and optimized user
+              experience and heavy performance.
+            </p>
+          </div>
+          <div>
+            <a class="aboutMeLink" href="/about"
+              ><div class="aboutMe button df" role="button">
+                <span>About Me</span>
+              </div></a
+            >
+          </div>
+
+          <div class="scroll-btn" style="opacity: 1">
+            <div class="scroll"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container m-t-80">
+      <h1 class="mark mtx">you are looking at</h1>
+      <div class="df vw-s pd w-100">
+        <div
+          class="profile-intro df bd5 bgwhite w-50"
+          style="padding: 30px 20px"
+        >
+          <div class="bio df col">
+            <ul class="pd justify text">
+              <li>
+                a Frontend developer with an experience of 2 years dealing with
+                html css and javascript codes.
+              </li>
+              <li>
+                A person with good expertise in js frameworks like
+                nodejs,Angular and react.
+              </li>
+              <li>
+                A developer with Knowledgeable in user interface, testing, and
+                debugging processes.
+              </li>
+              <li>
+                A dedicated guy who is Able to effectively self-manage during
+                independent projects, as well as collaborate in a team setting.
+              </li>
+              <li>A freelance who do freelancing as a side hustle</li>
+              <li>
+                An engineering student(2023-batch) pursuing B.tech from
+                <a class="color1" href="https://www.starexuniversity.com">
+                  Starex University</a
+                >.
+              </li>
+              <br />
+            </ul>
+
+            <div class="download animate__fadeInUp animate__animated">
+              <button class="bgcolor t-white button bd5 shadow">
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vanilla-zoom resume">
+          <div
+            class="detail-view"
+            style="
+              background-image: url(/assets/images/Anurag\ Kushwaha-1.png);
+              background-position: center;
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience " class="container m-t-80">
+      <h1 class="mark mtx">Experience</h1>
+      <div class="df vw-s shadow bd5 pd">
+        <div class="df col half">
+          <div class="rel">
+            <div class="exp">
+              <p class="year smallfont color3">
+                <i class="fas color1 fa-graduation-cap"></i>October 2020 -
+                December 2020
+              </p>
+              <h2>Frontend Development at RYD labs</h2>
+              <p class="">
+                designed and made website for students who are prepapring for
+                competitive exams. there me and our team members together made
+                the Frontend
+              </p>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="rel">
+            <div class="exp">
+              <p class="year smallfont color3">
+                <i class="fas color1 fa-graduation-cap"></i> present
+              </p>
+              <h2>
+                currently working as a Frontend developer at
+                <a href="https://www.trainman.in">trainman</a>
+              </h2>
+              <p class="">maintaining the frontend experience of the product</p>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="df col half imgbox">
+          <img
+            src="./assets/ex.png"
+            height="270"
+            width="270"
+            style="transform: translateY(50px)"
+            alt="experience"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="recent" class="container">
+      <h1 class="mark mtx">Recent Works</h1>
+
+      <div class="mtl vw-s" style="position: relative">
+        <ul class="df proj">
+          <li class="bd5">
+            <img src="./assets/projects/p-1.png" height="200" alt="" />
+            <p class="project-text">
+              <b> Musica: Music Player </b>
+              <br />
+            </p>
+          </li>
+          <li class="bd5">
+            <img src="./assets/projects/p-2.png" height="200" alt="" />
+            <p class="project-text">
+              <b> Talebook: A story Teller </b>
+              <br />
+            </p>
+          </li>
+          <li class="bd5">
+            <img src="./assets/projects/p-3.png" height="200" alt="" />
+            <p class="project-text">
+              <b> Victorya: A food shop </b>
+              <br />
+            </p>
+          </li>
+          <li class="bd5">
+            <img src="./assets/projects/p-4.png" height="200" alt="" />
+            <p class="project-text">
+              <b> Picosa: A photo vagabond </b>
+              <br />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="container" style="padding-top: 20px">
+      <h1 class="mark">Get in Touch</h1>
+      <div class="df vw-s">
+        <div
+          class="half pd"
+          style="max-width: fit-content; align-self: flex-start"
+        >
+          <h2>Lets talk about everything!</h2>
+          <p>just a e-mail away</p>
+        </div>
+        <div class="df col mt5 pd" style="flex-grow: 1; max-width: 600px">
+          <div class="df">
+            <input type="text" placeholder="Your name" class="half shadow mr" />
+            <input type="text" placeholder="Your name" class="half shadow mr" />
+          </div>
+          <input type="text" placeholder="subject" class="mr shadow" />
+          <textarea
+            name="Message"
+            id="message"
+            cols="20"
+            rows="10"
+            class="shadow mt5 bd5 mr"
+          ></textarea>
+          <button
+            class="bgcolor mr pd bd5 t-white"
+            style="max-width: fit-content"
+          >
+            Send Message
           </button>
         </div>
       </div>
-    </div>
-    </div>
+    </section>
+    <section>In develpment & last updated on 19December 2022</section>
+    <script>
+      // $(document).ready(function () {
+      //   $('ul.menu li a').click(function () {
+      //     $('li a').removeClass("active");
+      //     $(this).addClass("active");
+      //   });
+      // });
 
-  </section>
-  <section id="experience" class="container">
-    <h1 class="mark mtx">Experience</h1>
-    <div class="df vw-s shadow bd5 pd " style="">
+      /* Please ❤ this if you like it! */
 
-      <div class="df col half">
+      (function ($) {
+        "use strict";
 
-        <div class="rel">
-          <div class="exp">
-            <p class="year smallfont color3">
-              <i class="fas color1 fa-graduation-cap"></i>October 2020 - December 2020
-            </p>
-            <h2>Frontend Development at RYD labs</h2>
-            <p class="">
-              designed and made website for students who are prepapring for competitive exams. there me and our team
-              members together made the Frontend
-            </p>
-            <span class="line"></span>
-          </div>
-        </div>
-        <div class="rel">
-          <div class="exp">
-            <p class="year smallfont color3">
-              <i class="fas color1 fa-graduation-cap"></i> present
-            </p>
-            <h2>currently working as a Frontend developer at <a style="color: orangered;"
-                href="https://www.trainman.in">trainman</a></h2>
-            <p class="">
+        //Page cursors
 
-              maintaining the frontend experience of the product </p>
-            <span class="line"></span>
-          </div>
-        </div>
+        document
+          .getElementsByTagName("body")[0]
+          .addEventListener("mousemove", function (n) {
+            (t.style.left = n.clientX + "px"),
+              (t.style.top = n.clientY + "px"),
+              (e.style.left = n.clientX + "px"),
+              (e.style.top = n.clientY + "px"),
+              (i.style.left = n.clientX + "px"),
+              (i.style.top = n.clientY + "px");
+          });
+        var t = document.getElementById("cursor"),
+          e = document.getElementById("cursor2"),
+          i = document.getElementById("cursor3");
+        function n(t) {
+          e.classList.add("hover"), i.classList.add("hover");
+        }
+        function s(t) {
+          e.classList.remove("hover"), i.classList.remove("hover");
+        }
+        s();
+        for (
+          var r = document.querySelectorAll(".hover-target"), a = r.length - 1;
+          a >= 0;
+          a--
+        ) {
+          o(r[a]);
+        }
+        function o(t) {
+          t.addEventListener("mouseover", n), t.addEventListener("mouseout", s);
+        }
 
-      </div>
-      <div class="df col half imgbox">
-        <img src="./assets/ex.png" height="270" width="270" style="transform: translateY(50px);" alt="experience">
-      </div>
-    </div>
-  </section>
+        //Navigation
 
+        var app = (function () {
+          var body = undefined;
+          var menu = undefined;
+          var menuItems = undefined;
+          var init = function init() {
+            body = document.querySelector("body");
+            menu = document.querySelector(".menu-icon");
+            menuItems = document.querySelectorAll(".nav__list-item");
+            applyListeners();
+          };
+          var applyListeners = function applyListeners() {
+            menu.addEventListener("click", function () {
+              return toggleClass(body, "nav-active");
+            });
+          };
+          var toggleClass = function toggleClass(element, stringClass) {
+            if (element.classList.contains(stringClass))
+              element.classList.remove(stringClass);
+            else element.classList.add(stringClass);
+          };
+          init();
+        })();
 
-  <section id="recent" class="container">
-    <h1 class="mark mtx">Recent Works</h1>
+        //Switch light/dark
 
-    <div class="mtl vw-s" style="position: relative;">
-      <ul class="df proj">
-        <li class="bd5">
-
-          <img src="./assets/projects/p-1.png" height="200" alt="">
-          <p class="project-text">
-            <b>
-              Musica: Music Player
-            </b>
-            <br>
-
-          </p>
-        </li>
-        <li class="bd5">
-
-          <img src="./assets/projects/p-2.png" height="200" alt="">
-          <p class="project-text">
-            <b>
-              Talebook: A story Teller
-            </b>
-            <br>
-
-          </p>
-        </li>
-        <li class="bd5">
-
-          <img src="./assets/projects/p-3.png" height="200" alt="">
-          <p class="project-text">
-            <b>
-              Victorya: A food shop
-            </b>
-            <br>
-
-          </p>
-        </li>
-        <li class="bd5">
-
-          <img src="./assets/projects/p-4.png" height="200" alt="">
-          <p class="project-text">
-            <b>
-              Picosa: A photo vagabond
-            </b>
-            <br>
-
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section id="contact" class="container" style="padding-top: 20px; ">
-    <h1 class="mark">Get in Touch</h1>
-    <div class="df vw-s">
-      <div class="half pd" style="max-width: fit-content; align-self: flex-start;">
-        <h2>Lets talk about everything!</h1>
-          <p>just a e-mail away</p>
-      </div>
-      <div class="df col mt5 pd " style="flex-grow: 1; max-width: 600px;">
-        <div class="df ">
-          <input type="text" placeholder="Your name" class="half shadow mr">
-          <input type="text" placeholder="Your name" class="half shadow mr">
-        </div>
-        <input type="text" placeholder="subject" class="mr shadow">
-        <textarea name="Message" id="message" cols="20" rows="10" class="shadow mt5 bd5 mr"></textarea>
-        <button class="bgcolor1 mr pd bd5 white" style="max-width: fit-content;">Send Message</button>
-      </div>
-    </div>
-  </section>
-  <script>
-    $(document).ready(function () {
-      $('ul.menu li a').click(function () {
-        $('li a').removeClass("active");
-        $(this).addClass("active");
-      });
-    });
-  </script>
-</body>
-
+        $("#switch").on("click", function () {
+          if ($("body").hasClass("light")) {
+            $("body").removeClass("light");
+            $("#switch").removeClass("switched");
+          } else {
+            $("body").addClass("light");
+            $("#switch").addClass("switched");
+          }
+        });
+      })(jQuery);
+    </script>
+  </body>
 </html>
