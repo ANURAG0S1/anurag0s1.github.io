@@ -82,3 +82,84 @@ body.light .switch-wrap p span:nth-child(1):before {
   <p class="animate__fadeInUp animate__animated 2s">Web developer</p>
 </div>
 </section> -->
+
+   <!-- <nav class="df">
+      <div class="logo">
+        <div class="full-page hidden-menu w-100 h-100">
+          <div class="cross">
+            <div class="a"></div>
+            <div class="b"></div>
+          </div>
+          <div class="df menus">
+            <div class="text-menu w-50 color1">
+              <div><a href="#">Home</a></div>
+              <div><a href="/projects.html">Projects</a></div>
+              <div><a href="/about.html">About me</a></div>
+            </div>
+            <div class="squared-menu">
+              <div class="df w-50">
+                <div class="square-menu-item square-menu-item-1">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Github"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fab fa-github"></i>
+                      Email
+                    </div>
+                  </a>
+                </div>
+                <div class="square-menu-item square-menu-item-2">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Twitter"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fas fa-envelope"></i>
+                      Email
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="w-50 df">
+                <div class="square-menu-item square-menu-item-3">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Twitter"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fab fa-linkedin"></i>
+                      LinkedIn
+                    </div>
+                  </a>
+                </div>
+                <div class="square-menu-item square-menu-item-4">
+                  <a
+                    href="https://twitter.com/anurag0s1"
+                    title="Twitter"
+                    target="_blank"
+                  >
+                    <div class="icon">
+                      <i class="fab fa-twitter"></i>
+                      Twitter
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="df mt5">
+        <a href="https://twitter.com/anurag0s1" title="Twitter" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a title="Github" href="https://github.com/ANURAG0S1"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </nav> -->

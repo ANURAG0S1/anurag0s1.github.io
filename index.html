@@ -46,87 +46,6 @@
   </head>
 
   <body style="width: 100vw; overflow-x: hidden" onload="initZoom()">
-    <!-- <nav class="df">
-      <div class="logo">
-        <div class="full-page hidden-menu w-100 h-100">
-          <div class="cross">
-            <div class="a"></div>
-            <div class="b"></div>
-          </div>
-          <div class="df menus">
-            <div class="text-menu w-50 color1">
-              <div><a href="#">Home</a></div>
-              <div><a href="/projects.html">Projects</a></div>
-              <div><a href="/about.html">About me</a></div>
-            </div>
-            <div class="squared-menu">
-              <div class="df w-50">
-                <div class="square-menu-item square-menu-item-1">
-                  <a
-                    href="https://twitter.com/anurag0s1"
-                    title="Github"
-                    target="_blank"
-                  >
-                    <div class="icon">
-                      <i class="fab fa-github"></i>
-                      Email
-                    </div>
-                  </a>
-                </div>
-                <div class="square-menu-item square-menu-item-2">
-                  <a
-                    href="https://twitter.com/anurag0s1"
-                    title="Twitter"
-                    target="_blank"
-                  >
-                    <div class="icon">
-                      <i class="fas fa-envelope"></i>
-                      Email
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="w-50 df">
-                <div class="square-menu-item square-menu-item-3">
-                  <a
-                    href="https://twitter.com/anurag0s1"
-                    title="Twitter"
-                    target="_blank"
-                  >
-                    <div class="icon">
-                      <i class="fab fa-linkedin"></i>
-                      LinkedIn
-                    </div>
-                  </a>
-                </div>
-                <div class="square-menu-item square-menu-item-4">
-                  <a
-                    href="https://twitter.com/anurag0s1"
-                    title="Twitter"
-                    target="_blank"
-                  >
-                    <div class="icon">
-                      <i class="fab fa-twitter"></i>
-                      Twitter
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="df mt5">
-        <a href="https://twitter.com/anurag0s1" title="Twitter" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a title="Github" href="https://github.com/ANURAG0S1"
-          ><i class="fab fa-github"></i
-        ></a>
-      </div>
-    </nav> -->
-
     <header class="cd-header">
       <div class="header-wrapper">
         <div class="logo-wrap">
@@ -134,7 +53,7 @@
         </div>
 
         <div class="nav-but-wrap">
-          <div class="menu-icon hover-target">
+          <div class="menu-icon hover-target" id="menu_icon">
             <span class="menu-icon__line menu-icon__line-left"></span>
             <span class="menu-icon__line"></span>
             <span class="menu-icon__line menu-icon__line-right"></span>
@@ -145,18 +64,18 @@
 
     <div class="nav">
       <div class="nav__content">
-        <ul class="nav__list">
-          <li class="nav__list-item active-nav">
-            <a href="#" class="hover-target">home</a>
+        <ul class="nav__list menu">
+          <li class="nav__list-item">
+            <a href="#" class="on hover-target">home</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="hover-target">studio</a>
+            <a href="#recent" class="hover-target">Projects</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="hover-target">news</a>
+            <a href="#experience" class="hover-target">Experience</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="hover-target">contact</a>
+            <a href="#contact" class="hover-target">contact</a>
           </li>
         </ul>
       </div>
@@ -369,12 +288,20 @@
     </section>
     <section>In develpment & last updated on 19December 2022</section>
     <script>
-      // $(document).ready(function () {
-      //   $('ul.menu li a').click(function () {
-      //     $('li a').removeClass("active");
-      //     $(this).addClass("active");
-      //   });
-      // });
+      $(document).ready(function () {
+        $("ul.menu.nav__list li ").click(function () {
+          $("ul.menu li").removeClass("active-nav");
+          if ($(this).hasClass("active-nav")) {
+            $(this).removeClass("active-nav");
+          } else {
+            $(this).addClass("active-nav");
+            console.log("no");
+          }
+          setTimeout(() => {
+            document.getElementById("menu_icon").click();
+          }, 300);
+        });
+      });
 
       /* Please ❤ this if you like it! */
 
@@ -430,26 +357,34 @@
             menu.addEventListener("click", function () {
               return toggleClass(body, "nav-active");
             });
+            console.log(menuItems);
+            if (menuItems.length) {
+              Array.prototype.forEach.call(menuItems, function (node) {
+                // return toggleClass(node, "nav-active");
+              });
+            }
           };
           var toggleClass = function toggleClass(element, stringClass) {
-            if (element.classList.contains(stringClass))
+            if (element.classList.contains(stringClass)) {
               element.classList.remove(stringClass);
-            else element.classList.add(stringClass);
+            } else {
+              element.classList.add(stringClass);
+            }
           };
           init();
         })();
 
         //Switch light/dark
 
-        $("#switch").on("click", function () {
-          if ($("body").hasClass("light")) {
-            $("body").removeClass("light");
-            $("#switch").removeClass("switched");
-          } else {
-            $("body").addClass("light");
-            $("#switch").addClass("switched");
-          }
-        });
+        // $("#switch").on("click", function () {
+        //   if ($("body").hasClass("light")) {
+        //     $("body").removeClass("light");
+        //     $("#switch").removeClass("switched");
+        //   } else {
+        //     $("body").addClass("light");
+        //     $("#switch").addClass("switched");
+        //   }
+        // });
       })(jQuery);
     </script>
   </body>
