@@ -18,10 +18,6 @@
     <link rel="stylesheet" href="./assets/css/circle.css" />
     <link rel="stylesheet" href="./assets/css/galxy.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-    />
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
 
@@ -81,9 +77,9 @@
       </div>
     </div>
 
-    <div class="cursor" id="cursor"></div>
+    <!-- <div class="cursor" id="cursor"></div>
     <div class="cursor2" id="cursor2"></div>
-    <div class="cursor3" id="cursor3"></div>
+    <div class="cursor3" id="cursor3"></div> -->
 
     <section class="full-page container t-white front-page">
       <div>
@@ -93,7 +89,7 @@
           </h1>
 
           <h1 class="mark animate__fadeInUp animate__animated 2s">
-            <b> I turn logic into pixels </b>
+            <b> I turn IDEA into pixels </b>
           </h1>
 
           <div class="animate__fadeInUp animate__animated 3s">
@@ -104,11 +100,9 @@
             </p>
           </div>
           <div>
-            <a class="aboutMeLink" href="/about"
-              ><div class="aboutMe button df" role="button">
-                <span>About Me</span>
-              </div></a
-            >
+            <div class="aboutMe button df" role="button">
+              <a class="aboutMeLink" href="/about"> <span>About Me</span></a>
+            </div>
           </div>
 
           <div class="scroll-btn" style="opacity: 1">
@@ -143,7 +137,6 @@
                 A dedicated guy who is Able to effectively self-manage during
                 independent projects, as well as collaborate in a team setting.
               </li>
-              <li>A freelance who do freelancing as a side hustle</li>
               <li>
                 An engineering student(2023-batch) pursuing B.tech from
                 <a class="color1" href="https://www.starexuniversity.com">
@@ -173,9 +166,9 @@
       </div>
     </section>
 
-    <section id="experience " class="container m-t-80">
-      <h1 class="mark mtx">Experience</h1>
-      <div class="df vw-s shadow bd5 pd">
+    <section id="experience" class="container m-t-80">
+      <h1 class="mark">Experience</h1>
+      <div class="df vw-s shadow bd5">
         <div class="df col half">
           <div class="rel">
             <div class="exp">
@@ -183,8 +176,8 @@
                 <i class="fas color1 fa-graduation-cap"></i>October 2020 -
                 December 2020
               </p>
-              <h2>Frontend Development at RYD labs</h2>
-              <p class="">
+              <h2 class="role">Frontend Development at RYD labs</h2>
+              <p class="work-role">
                 designed and made website for students who are prepapring for
                 competitive exams. there me and our team members together made
                 the Frontend
@@ -195,13 +188,15 @@
           <div class="rel">
             <div class="exp">
               <p class="year smallfont color3">
-                <i class="fas color1 fa-graduation-cap"></i> present
+                <i class="fas color1 fa-graduation-cap"></i>present
               </p>
-              <h2>
-                currently working as a Frontend developer at
+              <h2 class="role">
+                Frontend developer at
                 <a href="https://www.trainman.in">trainman</a>
               </h2>
-              <p class="">maintaining the frontend experience of the product</p>
+              <p class="work-role">
+                maintaining the frontend experience of the product
+              </p>
               <span class="line"></span>
             </div>
           </div>
@@ -211,7 +206,7 @@
             src="./assets/ex.png"
             height="270"
             width="270"
-            style="transform: translateY(50px)"
+            style="transform: translate(120px, 50px)"
             alt="experience"
           />
         </div>
@@ -254,6 +249,7 @@
         </ul>
       </div>
     </section>
+
     <section id="contact" class="container" style="padding-top: 20px">
       <h1 class="mark">Get in Touch</h1>
       <div class="df vw-s">
@@ -267,7 +263,11 @@
         <div class="df col mt5 pd" style="flex-grow: 1; max-width: 600px">
           <div class="df">
             <input type="text" placeholder="Your name" class="half shadow mr" />
-            <input type="text" placeholder="Your name" class="half shadow mr" />
+            <input
+              type="text"
+              placeholder="john.doe@mail.com"
+              class="half shadow mr"
+            />
           </div>
           <input type="text" placeholder="subject" class="mr shadow" />
           <textarea
@@ -277,10 +277,7 @@
             rows="10"
             class="shadow mt5 bd5 mr"
           ></textarea>
-          <button
-            class="bgcolor mr pd bd5 t-white"
-            style="max-width: fit-content"
-          >
+          <button class="mr bd5 t-white button" style="max-width: fit-content">
             Send Message
           </button>
         </div>
@@ -306,43 +303,42 @@
       /* Please ❤ this if you like it! */
 
       (function ($) {
-        "use strict";
+        // "use strict";
 
         //Page cursors
 
-        document
-          .getElementsByTagName("body")[0]
-          .addEventListener("mousemove", function (n) {
-            (t.style.left = n.clientX + "px"),
-              (t.style.top = n.clientY + "px"),
-              (e.style.left = n.clientX + "px"),
-              (e.style.top = n.clientY + "px"),
-              (i.style.left = n.clientX + "px"),
-              (i.style.top = n.clientY + "px");
-          });
-        var t = document.getElementById("cursor"),
-          e = document.getElementById("cursor2"),
-          i = document.getElementById("cursor3");
-        function n(t) {
-          e.classList.add("hover"), i.classList.add("hover");
-        }
-        function s(t) {
-          e.classList.remove("hover"), i.classList.remove("hover");
-        }
-        s();
-        for (
-          var r = document.querySelectorAll(".hover-target"), a = r.length - 1;
-          a >= 0;
-          a--
-        ) {
-          o(r[a]);
-        }
-        function o(t) {
-          t.addEventListener("mouseover", n), t.addEventListener("mouseout", s);
-        }
+        // document
+        //   .getElementsByTagName("body")[0]
+        //   .addEventListener("mousemove", function (n) {
+        //     (t.style.left = n.clientX + "px"),
+        //       (t.style.top = n.clientY + "px"),
+        //       (e.style.left = n.clientX + "px"),
+        //       (e.style.top = n.clientY + "px"),
+        //       (i.style.left = n.clientX + "px"),
+        //       (i.style.top = n.clientY + "px");
+        //   });
+        // var t = document.getElementById("cursor"),
+        //   e = document.getElementById("cursor2"),
+        //   i = document.getElementById("cursor3");
+        // function n(t) {
+        //   e.classList.add("hover"), i.classList.add("hover");
+        // }
+        // function s(t) {
+        //   e.classList.remove("hover"), i.classList.remove("hover");
+        // }
+        // s();
+        // for (
+        //   var r = document.querySelectorAll(".hover-target"), a = r.length - 1;
+        //   a >= 0;
+        //   a--
+        // ) {
+        //   o(r[a]);
+        // }
+        // function o(t) {
+        //   t.addEventListener("mouseover", n), t.addEventListener("mouseout", s);
+        // }
 
         //Navigation
-
         var app = (function () {
           var body = undefined;
           var menu = undefined;
@@ -360,7 +356,7 @@
             console.log(menuItems);
             if (menuItems.length) {
               Array.prototype.forEach.call(menuItems, function (node) {
-                // return toggleClass(node, "nav-active");
+                return toggleClass(node, "nav-active");
               });
             }
           };
