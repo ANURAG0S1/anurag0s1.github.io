@@ -1,385 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 , user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/animate.css" />
-    <link rel="stylesheet" href="./assets/css/circle.css" />
-    <link rel="stylesheet" href="./assets/css/galxy.css" />
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Anurag kushwaha</title>
+</head>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <title>Anurag</title>
-  </head>
-
-  <body style="width: 100vw; overflow-x: hidden" onload="initZoom()">
-    <header class="cd-header">
-      <div class="header-wrapper">
-        <div class="logo-wrap">
-          <a href="#" class="hover-target"><span>ANURAG</span></a>
-        </div>
-
-        <div class="nav-but-wrap">
-          <div class="menu-icon hover-target" id="menu_icon">
-            <span class="menu-icon__line menu-icon__line-left"></span>
-            <span class="menu-icon__line"></span>
-            <span class="menu-icon__line menu-icon__line-right"></span>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="nav">
-      <div class="nav__content">
-        <ul class="nav__list menu">
-          <li class="nav__list-item">
-            <a href="#" class="on hover-target">home</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#recent" class="hover-target">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#experience" class="hover-target">Experience</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#contact" class="hover-target">contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- <div class="cursor" id="cursor"></div>
-    <div class="cursor2" id="cursor2"></div>
-    <div class="cursor3" id="cursor3"></div> -->
-
-    <section class="full-page container t-white front-page">
-      <div>
-        <div class="screen-center-h">
-          <h1 class="mark-1 animate__fadeInUp animate__animated 1s">
-            Hi, I'm Anurag Kushwaha
-          </h1>
-
-          <h1 class="mark animate__fadeInUp animate__animated 2s">
-            <b> I turn IDEA into Reality </b>
-          </h1>
-
-          <div class="animate__fadeInUp animate__animated 3s">
-            <p>
-              I am a Creative Developer and Web Designer specializing in
-              creating web apps with clean user interface and optimized user
-              experience and heavy performance.
-            </p>
-          </div>
-          <div>
-            <div class="aboutMe button df" role="button">
-              <a class="aboutMeLink" href="/about"> <span>About Me</span></a>
+<body>
+    <main>
+        <section class="profile">
+            <div class="d-flex">
+                <div class="me">
+                    <img src="./assets/anurag.png" height="80" alt="" />
+                </div>
+                <div class="my-intro">
+                    <!-- Name  -->
+                    <div class="my-name">Anurag Kushwaha</div>
+                    <!-- Short Intro  -->
+                    <div>
+                        Frontend Engineer with 3+ years of experience building scalable
+                        web applications. Currently at Adani Digital Labs, formerly at
+                        Trainman. Specialized in React, Angular, and Node.js.
+                    </div>
+                    <!-- Socials  -->
+                    <ul class="social-links d-flex">
+                        <li>
+                            <a class="btn" href="https://www.linkedin.com/in/anurag0s1/" target="_blank">
+                                <i class="fa fa-linkedin" style="font-size: 16px; vertical-align: top"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn" href="https://x.com/anurag0s1" target="_blank">
+                                <i class="fa fa-twitter" style="font-size: 16px; vertical-align: top"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn" href="https://github.com/ANURAG0S1" target="_blank">
+                                <i class="fa fa-github" style="font-size: 16px; vertical-align: top"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn" href="mailto:anuragkush051@gmail.com" target="_blank">
+                                <i class="fa fa-envelope" style="font-size: 16px; vertical-align: top"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </section>
+        <!-- Education  -->
+        <section>
+            <div class="section-heading">Education</div>
+            <ul class="education">
+                <li><span class="sub-section-title"> Bachelor of Technology <i>Computer Science and
+                            Engineering</i> </span>
+                    <span>2019-23</span>
+                </li>
+                <li><a href="https://www.starexuniversity.com/">Starex University</a> <span><i>CGPA 8.1/ 10</i></span>
+                </li>
+            </ul>
+        </section>
+        <!-- Skills  -->
+        <section>
+            <div class="section-heading">Technical Skills</div>
+            <ul class="skills">
+                <li><span class="sub-section-title"> Languages</span> :
+                    HTML, CSS, JavaScript, TypeScript, Python, PHP, SQL, Java</li>
+                <li><span class="sub-section-title">Frameworks & Libraries</span> :
+                    React, Angular (v9–18), Redux, Node.js, Express.js, Mongoose, EJS, SASS</li>
+                <li><span class="sub-section-title">Tools & Platforms</span> :
+                    Docker, Jenkins, Git, Postman, Lighthouse, nGinx, Grafana, JIRA, ServiceNow, Google Analytics</li>
+                <li><span class="sub-section-title">Development Practices</span> :
+                    Performance Optimization, Secure Coding (XSS, CSRF), CI/CD, Test-Driven Development (TDD),
+                    Agile/Scrum, Accessibility (WCAG), SEO Optimization, OOP, SOLID Principles</li>
+            </ul>
+        </section>
+        <!-- Experience  -->
+        <section>
+            <div class="section-heading">Experience</div>
+            <p>
+                I currently work as a Frontend Executive at Adani Digital Labs,
+                contributing to the development of the AdaniOne app. Previously at
+                Trainman, I played a key role in building the Trainman web
+                application, with a proven track record of reducing load times by up
+                to 70% and optimizing user experience for millions of users.
+            </p>
+            <div class="companies sub-section">
+                <div class="company">
+                    <div class="sub-section-title">
+                        <span>
+                            Adani Digital Labs <i>Frontend Developer</i>
+                        </span>
+                        <span class="duration">July 2023 - present</span>
+                    </div>
+                    <div class="sub-section-sub-title">
+                        <span>Gurugaon, India</span>
+                    </div>
+                    <div class="sub-section-desc">
+                        <ul>
+                            <li>Maintained and enhanced the white-label solution for Trainman, delivering robust
+                                train-related features across multiple client
+                                platforms, resulting in improved user engagement and satisfaction.</li>
+                            <li>Contributed to the migration of a multi-page Angular application to ReactJS and Express,
+                                reducing load times by 70%,
+                                dramatically improving user experience, retention, and SEO performance</li>
+                            <li>Implemented lazy loading, code splitting, and Server-Side Rendering (SSR), reducing page
+                                load times from 6s to 2.5s and
+                                improving SEO rankings and user retention.</li>
+                            <li>
+                                Implemented critical security best practices, including input validation, secure
+                                authentication, and protection against XSS and CSRF, significantly strengthening the
+                                application’s security posture.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="sub-section-title">
+                        <span>
+                            Trainman <i>Software Engineer</i>
+                        </span>
+                        <span class="duration">January 2022 - July 2023</span>
+                    </div>
+                    <div class="sub-section-sub-title">
+                        <span>Gurgaon, India</span>
+                    </div>
+                    <div class="sub-section-desc">
+                        <ul>
+                            <li>Developed and deployed a white-label integration plugin for Trainman, enabling seamless
+                                onboarding of 3 clients, expanding
+                                the user base and enhancing service capabilities.</li>
+                            <li>Decoupled and modularized IRCTC services into independent microservices, improving
+                                system scalability, fault isolation, and
+                                uptime for mission-critical functionalities.</li>
+                            <li>Led the development of FCS and Trip Assurance features, contributing to strategic
+                                planning and end-to-end implementation, which contributed to a 12% increase in revenue.
+                            </li>
+                            <li>
+                                Implemented critical security best practices, including input validation, secure
+                                authentication, and protection against XSS and CSRF, significantly strengthening the
+                                application’s security posture.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="scroll-btn" style="opacity: 1">
-            <div class="scroll"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- PROJECTS  -->
+        <section>
+            <div class="section-heading">Projects</div>
 
-    <section id="about" class="container m-t-80">
-      <h1 class="mark mtx">you are looking at</h1>
-      <div class="df vw-s pd w-100">
-        <div
-          class="profile-intro df bd5 bgwhite w-50"
-          style="padding: 30px 20px"
-        >
-          <div class="bio df col">
-            <ul class="pd text">
-              <li>
-                A Frontend developer with an experience of 2 years dealing with
-                html css and javascript codes.
-              </li>
-              <li>
-                A person with good expertise in js frameworks like
-                nodejs,Angular and react.
-              </li>
-              <li>
-                A developer with Knowledgeable in user interface, testing, and
-                debugging processes.
-              </li>
-              <li>
-                A dedicated guy who is Able to effectively self-manage during
-                independent projects, as well as collaborate in a team setting.
-              </li>
-              <li>
-                An engineering student(2023-batch) pursuing B.tech from
-                <a class="color1" href="https://www.starexuniversity.com">
-                  Starex University</a
-                >.
-              </li>
-              <br />
+            <div class="sub-section-title">
+                <span>
+                    eShop <i> <a href="https://eshop-bc5b4.web.app/">e Commerce Application</a></i>
+                </span>
+
+            </div>
+            <ul>
+                <li>
+                    Developed a full-featured e-commerce platform with secure JWT authentication, password hashing, and
+                    automated email notifications. Implemented core user functionalities such as product purchasing,
+                    cart management, wishlisting, and integrated Razorpay for seamless payments. Built seller-specific
+                    modules including product management and real-time order tracking using WebSockets.
+                </li>
+                <li>
+
+                    Technology Used: <b> React, Redux, NodeJs, ExpressJs, Socket.io</b>
+                </li>
             </ul>
 
-            <div class="download animate__fadeInUp animate__animated">
-              <button class="bgcolor t-white button bd5 shadow">
-                Download CV
-              </button>
+            <div class="sub-section-title d-flex jc-sb">
+                <span>
+                    Github Finder <i> <a href="https://github-finder-shuklaksh.netlify.app/">e Commerce Application</a></i>
+                </span>
+
+                <span><a href="https://github.com/ANURAG0S1/github-finder">github</a></span>
+
             </div>
-          </div>
-        </div>
+            <ul>
+                <li>
 
-        <div class="vanilla-zoom resume">
-          <div
-            class="detail-view"
-            style="
-              background-image: url(/assets/images/Anurag\ Kushwaha-1.png);
-              background-position: center;
-            "
-          ></div>
-        </div>
-      </div>
-    </section>
+                    Developed a web app that allows users to search any public GitHub profile and view detailed stats and
+                    repositories. Built with ReactJS, TailwindCSS, GitHub REST API for data fetching, and React Router for
+                    seamless navigation.
+                </li>
+                <li>
 
-    <section id="experience" class="container m-t-80">
-      <h1 class="mark">Experience</h1>
-      <div class="df vw-s shadow bd5">
-        <div class="df col half">
-          <div class="rel">
-            <div class="exp">
-              <p class="year smallfont color3">
-                <i class="fas color1 fa-graduation-cap"></i>October 2020 -
-                December 2020
-              </p>
-              <h2 class="role">Frontend Development at RYD labs</h2>
-              <p class="work-role">
-                designed and made website for students who are prepapring for
-                competitive exams. there me and our team members together made
-                the Frontend
-              </p>
-              <span class="line"></span>
-            </div>
-          </div>
-          <div class="rel">
-            <div class="exp">
-              <p class="year smallfont color3">
-                <i class="fas color1 fa-graduation-cap"></i>present
-              </p>
-              <h2 class="role">
-                Frontend developer at
-                <a href="https://www.trainman.in">trainman</a>
-              </h2>
-              <p class="work-role">
-                maintaining the frontend experience of the product
-              </p>
-              <span class="line"></span>
-            </div>
-          </div>
-        </div>
-        <div class="df col half imgbox">
-          <img
-            src="./assets/ex.png"
-            height="270"
-            width="270"
-            style="transform: translate(120px, 50px)"
-            alt="experience"
-          />
-        </div>
-      </div>
-    </section>
+                    Technology Used: <b> React, DaisyUI, Netlify </b>
+                </li>
+                </ul>
+            </ul>
 
-    <section id="recent" class="container">
-      <h1 class="mark mtx">Recent Works</h1>
-
-      <div class="mtl vw-s" style="position: relative">
-        <ul class="df proj">
-          <li class="bd5">
-            <img src="./assets/projects/p-1.png" height="200" alt="" />
-            <p class="project-text">
-              <b> Musica: Music Player </b>
-              <br />
+        </section>
+        <!-- EXTRA RESPONSIBILITES  -->
+        <section>
+            <div class="section-heading">EXTRA RESPONSIBILITES</div>
+            <p>
+                Demonstrated strong <b>leadership</b> by <b>managing a team</b> of five developers, overseeing task
+                distribution,
+                daily stand-ups, and project delivery timelines. Actively contributed to <b>technical planning</b>,
+                including
+                architecture design and feature strategy for complex frontend solutions. Streamlined deployment
+                workflows by implementing <b>CI/CD pipelines</b>, ensuring faster and more reliable releases. Took
+                <b>ownership</b> of
+                <b>code reviews</b> to uphold coding standards and promote clean, maintainable code across the team.
             </p>
-          </li>
-          <li class="bd5">
-            <img src="./assets/projects/p-2.png" height="200" alt="" />
-            <p class="project-text">
-              <b> Talebook: A story Teller </b>
-              <br />
-            </p>
-          </li>
-          <li class="bd5">
-            <img src="./assets/projects/p-3.png" height="200" alt="" />
-            <p class="project-text">
-              <b> Victorya: A food shop </b>
-              <br />
-            </p>
-          </li>
-          <li class="bd5">
-            <img src="./assets/projects/p-4.png" height="200" alt="" />
-            <p class="project-text">
-              <b> Picosa: A photo vagabond </b>
-              <br />
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
 
-    <section id="contact" class="container" style="padding-top: 20px">
-      <h1 class="mark">Get in Touch</h1>
-      <div class="df vw-s">
-        <div
-          class="half pd"
-          style="max-width: fit-content; align-self: flex-start"
-        >
-          <h2>Lets talk about everything!</h2>
-          <p>just a e-mail away</p>
-        </div>
-        <div class="df col mt5 pd" style="flex-grow: 1; max-width: 600px">
-          <div class="df">
-            <input type="text" placeholder="Your name" class="half shadow mr" />
-            <input
-              type="text"
-              placeholder="john.doe@mail.com"
-              class="half shadow mr"
-            />
-          </div>
-          <input type="text" placeholder="subject" class="mr shadow" />
-          <textarea
-            name="Message"
-            id="message"
-            cols="20"
-            rows="10"
-            class="shadow mt5 bd5 mr"
-          ></textarea>
-          <button class="mr bd5 t-white button" style="max-width: fit-content">
-            Send Message
-          </button>
-        </div>
-      </div>
-    </section>
-    <section>In develpment & last updated 2 FEB 2023</section>
-    <script>
-      $(document).ready(function () {
-        $("ul.menu.nav__list li ").click(function () {
-          $("ul.menu li").removeClass("active-nav");
-          if ($(this).hasClass("active-nav")) {
-            $(this).removeClass("active-nav");
-          } else {
-            $(this).addClass("active-nav");
-            console.log("no");
-          }
-          setTimeout(() => {
-            document.getElementById("menu_icon").click();
-          }, 300);
-        });
-      });
+        </section>
+    </main>
+</body>
 
-      (function ($) {
-        // "use strict";
-
-        //Page cursors
-
-        // document
-        //   .getElementsByTagName("body")[0]
-        //   .addEventListener("mousemove", function (n) {
-        //     (t.style.left = n.clientX + "px"),
-        //       (t.style.top = n.clientY + "px"),
-        //       (e.style.left = n.clientX + "px"),
-        //       (e.style.top = n.clientY + "px"),
-        //       (i.style.left = n.clientX + "px"),
-        //       (i.style.top = n.clientY + "px");
-        //   });
-        // var t = document.getElementById("cursor"),
-        //   e = document.getElementById("cursor2"),
-        //   i = document.getElementById("cursor3");
-        // function n(t) {
-        //   e.classList.add("hover"), i.classList.add("hover");
-        // }
-        // function s(t) {
-        //   e.classList.remove("hover"), i.classList.remove("hover");
-        // }
-        // s();
-        // for (
-        //   var r = document.querySelectorAll(".hover-target"), a = r.length - 1;
-        //   a >= 0;
-        //   a--
-        // ) {
-        //   o(r[a]);
-        // }
-        // function o(t) {
-        //   t.addEventListener("mouseover", n), t.addEventListener("mouseout", s);
-        // }
-
-        //Navigation
-        var app = (function () {
-          var body = undefined;
-          var menu = undefined;
-          var menuItems = undefined;
-          var init = function init() {
-            body = document.querySelector("body");
-            menu = document.querySelector(".menu-icon");
-            menuItems = document.querySelectorAll(".nav__list-item");
-            applyListeners();
-          };
-          var applyListeners = function applyListeners() {
-            menu.addEventListener("click", function () {
-              return toggleClass(body, "nav-active");
-            });
-            console.log(menuItems);
-            if (menuItems.length) {
-              Array.prototype.forEach.call(menuItems, function (node) {
-                return toggleClass(node, "nav-active");
-              });
-            }
-          };
-          var toggleClass = function toggleClass(element, stringClass) {
-            if (element.classList.contains(stringClass)) {
-              element.classList.remove(stringClass);
-            } else {
-              element.classList.add(stringClass);
-            }
-          };
-          init();
-        })();
-
-        //Switch light/dark
-
-        // $("#switch").on("click", function () {
-        //   if ($("body").hasClass("light")) {
-        //     $("body").removeClass("light");
-        //     $("#switch").removeClass("switched");
-        //   } else {
-        //     $("body").addClass("light");
-        //     $("#switch").addClass("switched");
-        //   }
-        // });
-      })(jQuery);
-    </script>
-  </body>
 </html>

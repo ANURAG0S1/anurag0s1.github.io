@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #4a4a4a;
+    line-height: 1.6;
+    background-color: white;
+}
+
+
+main {
+    max-width: 720px;
+    margin: 24px auto;
+    font-size: 13px;
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.me img {
+    /* background: linear-gradient(-45deg, #e0eafc, #cfdef3, #f9f9f9, #dee2e6); */
+    background: linear-gradient(-45deg, #ffbbe4, #bbb9ff, #a9ffd4, #fff0a2);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    border: 2px solid #4a4a4a;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    box-shadow: 0px 6px 20px 0px #8080808c;
+    height: 100px;
+    width: 100px;
+    -webkit-animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.my-intro {
+    display: flex;
+    flex-direction: column;
+
+    .my-name {
+        font-size: large;
+        font-weight: 550;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        list-style: none;
+        margin: 6px 2px;
+
+    }
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: 550;
+    margin-top: 24px;
+
+}
+
+.sub-section-title {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+
+
+}
+
+.companies .company {
+    .sub-section-title {
+        display: flex;
+        justify-content: space-between;
+
+        .duration {
+            font-size: 12px;
+            font-weight: 550;
+        }
+    }
+}
+
+ul li {
+    margin-top: 8px;
+    text-align: justify;
+
+
+}
+
+i {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+ul.education {
+    .sub-section-title {
+        margin-top: 0px;
+    }
+
+    li {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: #79797954;
+    -moz-text-decoration-color: #79797954;
+}
+
+b {
+    font-weight: 600;
+}
