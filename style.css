@@ -151,6 +151,7 @@ main {
     max-width: 720px;
     margin: 24px auto;
     font-size: 13px;
+    padding: 0px 24px;
 }
 
 .d-flex {
