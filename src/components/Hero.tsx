@@ -8,8 +8,8 @@ export function Hero() {
         <p className="hero-chip">{site.hero.eyebrow}</p>
         <div className="hero-copy">
           <h1 id="hero-heading">
-            <span className="hero-line">The full stack</span>
-            <span className="hero-line">in production</span>
+            <span className="hero-line">Engineer,</span>
+            <span className="hero-line">obsessively practical.</span>
           </h1>
           <p className="hero-lede">{site.hero.lede}</p>
           <div className="hero-actions">

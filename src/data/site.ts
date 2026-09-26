@@ -20,15 +20,15 @@ export const site = {
   hero: {
     eyebrow: "SDE I · Cleartrip · Bengaluru",
     name: "Anurag Kushwaha",
-    headline: "The full stack in production",
-    statement: ["The full stack", "in production."],
-    lede: "Frontend, backend, and the systems in between.",
+    headline: "Engineer, obsessively practical.",
+    statement: ["Engineer,", "obsessively practical."],
+    lede: "I'm Anurag — a full-stack engineer in Bengaluru with 3.5+ years shipping production systems: performance migrations, SEO infrastructure, and integrations that hold under real load.",
     stack: ["Next.js", "Angular", "TypeScript", "Express", "Node.js"],
   },
   about: {
     heading: "I build frontend systems that hold their speed.",
     paragraphs: [
-      "I started in travel tech and stayed there on purpose. Train booking, payments, ads, and SEO are unforgiving: if the page is slow, the booking dies. If the integration flakes, the SLA goes with it.",
+      "I work on systems where slow or flaky isn't an option: high-traffic booking flows, payments, ads, and SEO. If the page is slow, conversion dies. If an integration flakes, the SLA goes with it.",
       "That path runs Trainman → Adani Digital Labs → Cleartrip: white-label train surfaces, an Angular-to-Express migration that cut load times by about 70%, then Next.js SEO systems and CI/CD that halved release cycles.",
     ],
     aside: {
@@ -245,7 +245,7 @@ export const engineering = [
     stat: "70%",
     label: "Faster load times",
     title: "Angular → Express.js",
-    body: "Eighteen months moving a live travel surface toward Express.js, with five APIs still inside SLA.",
+    body: "Eighteen months moving a live production surface toward Express.js, with five APIs still inside SLA.",
   },
   {
     stat: "6s → 2.5s",
@@ -283,26 +283,26 @@ export const principles = [
   {
     id: "01",
     name: "Migrate",
-    title: "Move the stack without taking the product down.",
-    body: "Angular 9 → 13, then Angular → Express over 18 months. Five live APIs. The work is sequencing and contracts, not a demo rewrite.",
+    title: "I move stacks without taking the product down.",
+    body: "I've done Angular 9 → 13, then Angular → Express over 18 months, with five live APIs still in the path. For me that's sequencing and contracts, never a demo rewrite.",
   },
   {
     id: "02",
     name: "Measure",
-    title: "Lighthouse and New Relic before opinions.",
-    body: "6s to 2.5s with SSR. ~70% load-time drop on a migration. Performance is a number you keep, not a slide you present.",
+    title: "I check Lighthouse and New Relic before I have an opinion.",
+    body: "6s to 2.5s with SSR. ~70% off load time on a migration I owned end to end. I treat performance as a number I keep, not a slide I present.",
   },
   {
     id: "03",
     name: "Integrate",
-    title: "Third-party systems are part of the product.",
-    body: "IRCTC, Razorpay, ads, analytics. If it does not survive SLA, it is not integrated — it is attached.",
+    title: "Third-party systems are part of my product, not bolted on.",
+    body: "IRCTC, Razorpay, ads, analytics — I've wired all of them into production. If it doesn't survive SLA, I don't call it integrated.",
   },
   {
     id: "04",
     name: "Unblock",
-    title: "Ship the system that lets other people ship.",
-    body: "Config-driven UI for campaigns. CI/CD that cut release cycles by 50%. Engineering leverage is when marketing does not wait on a PR.",
+    title: "I ship the system that lets other people ship.",
+    body: "A config-driven UI for campaigns, a CI/CD pipeline that cut release cycles by 50% — that's the leverage I aim for: marketing not waiting on my PR.",
   },
 ];
 

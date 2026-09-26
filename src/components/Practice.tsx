@@ -18,7 +18,8 @@ export function Practice() {
               <li key={p.id}>
                 <span className="mono">{p.id}</span>
                 <h3>{p.name}</h3>
-                <p>{p.title}</p>
+                <p className="method-title">{p.title}</p>
+                <p className="method-body">{p.body}</p>
               </li>
             ))}
           </ol>
@@ -39,6 +40,30 @@ export function Practice() {
           </div>
         </div>
 
+        <div className="education">
+          <p className="mono">Education</p>
+          <div className="edu-card">
+            <div className="edu-main">
+              <h3>B.Tech, Computer Science (minor)</h3>
+              <p className="edu-school">{education.school}</p>
+            </div>
+            <dl className="edu-meta">
+              <div>
+                <dt>Graduated</dt>
+                <dd>{education.year}</dd>
+              </div>
+              <div>
+                <dt>GPA</dt>
+                <dd>{education.gpa}</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>{education.place}</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
         <div className="creds">
           <p className="mono">Credentials</p>
           <ul>
@@ -50,12 +75,6 @@ export function Practice() {
                 </span>
               </li>
             ))}
-            <li>
-              <strong>B.Tech, Computer Science (minor)</strong>
-              <span>
-                {education.school} · {education.year} · GPA {education.gpa}
-              </span>
-            </li>
           </ul>
         </div>
       </div>
