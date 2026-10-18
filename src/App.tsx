@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { Work } from "./components/Work";
 import { Practice } from "./components/Practice";
 import { Contact, Footer } from "./components/Contact";
+import { NowPlaying } from "./components/NowPlaying";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <NowPlaying />
     </>
   );
 }
